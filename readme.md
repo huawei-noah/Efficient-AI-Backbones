@@ -27,9 +27,11 @@ caffe_ilsvrc12 data can be downloaded from http://dl.caffe.berkeleyvision.org/ca
 The code was verified on Python3.6, TF-1.13.1, Tensorpack-0.9.7. Not sure on other version.
 
 ### Citation
+```
 @article{ghostnet,
   title={GhostNet: More Features from Cheap Operations},
   author={Han, Kai and Wang, Yunhe and Tian, Qi and Guo, Jianyuan and Xu, Chunjing and Xu, Chang},
   journal={arXiv preprint},
   year={2019}
 }
+```
