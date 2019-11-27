@@ -6,11 +6,15 @@ By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
 
 - **Approach**
 
-![](./fig/ghost_module.png)
+<div align="center">
+   <img src="./fig/ghost_module.png" width="720">
+</div>
 
 - **Performance**
 
-![](./fig/flops_latency.png)
+<div align="center">
+   <img src="./fig/flops_latency.png" width="720">
+</div>
 
 ## Implementation
 
