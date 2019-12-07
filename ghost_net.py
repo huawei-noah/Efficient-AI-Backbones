@@ -63,7 +63,7 @@ class GhostNet(ImageNetModel):
             with argscope(Conv2D, 
                   kernel_initializer=kernel_initializer):
                 with argscope([Conv2D, BatchNorm], data_format=self.data_format):
-                    logits, end_points = mobilenet_v2(
+                    logits, end_points = ghost_net(
                         inputs,
                         dw_code=self.dw_code,
                         ratio_code=self.ratio_code,
@@ -293,7 +293,7 @@ def ghostnet_base(inputs,
     raise ValueError('Unknown final endpoint %s' % final_endpoint)
 
 
-def mobilenet_v2(inputs,
+def ghost_net(inputs,
                  num_classes=1000,
                  dropout_keep_prob=0.999,
                  is_training=True,

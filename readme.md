@@ -20,7 +20,7 @@ We beat other SOTA lightweight CNNs such as **MobileNetV3** and **FBNet**.
 
 ## Implementation
 
-The code provides the TensorFlow code and pretrained model of GhostNet on ImageNet.
+This repo provides the TensorFlow code and pretrained model of GhostNet on ImageNet. The PyTorch implementation can be found [here](https://github.com/iamhankai/ghostnet.pytorch).
 
 `myconv2d.py` implemented `GhostModule` and `ghost_net.py` implemented `GhostNet`.
 
@@ -28,7 +28,7 @@ The code provides the TensorFlow code and pretrained model of GhostNet on ImageN
 The code was verified on Python3.6, TensorFlow-1.13.1, Tensorpack-0.9.7. Not sure on other version.
 
 ### Usage
-Run `python test-ghostnet.py --eval --data_dir=/path/to/imagenet/dir/ --load=./models/ghostnet_checkpoint` to evaluate on `val` set.
+Run `python main.py --eval --data_dir=/path/to/imagenet/dir/ --load=./models/ghostnet_checkpoint` to evaluate on `val` set.
 
 You'll get the accuracy: top-1 error=`0.26066`, top-5 error=`0.08614` with only `141M` Flops (or say MAdds).
 
