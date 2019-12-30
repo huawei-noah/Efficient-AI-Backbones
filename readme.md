@@ -57,3 +57,9 @@ caffe_ilsvrc12 data can be downloaded from http://dl.caffe.berkeleyvision.org/ca
   year={2019}
 }
 ```
+
+## Other versions
+This repo provides the TensorFlow code of GhostNet. Other versions can be found in the following:
+
+0. Pytorch: [code](https://github.com/iamhankai/ghostnet.pytorch)
+1. Darknet: [cfg file](https://github.com/AlexeyAB/darknet/files/3997987/ghostnet.cfg.txt), and [description](https://github.com/AlexeyAB/darknet/issues/4418)
