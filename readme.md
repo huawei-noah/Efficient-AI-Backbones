@@ -1,5 +1,8 @@
 # GhostNet
 
+:white_check_mark: News: Our paper is accepted by CVPR 2020.
+
+---
 GhostNet: More Features from Cheap Operations [[arXiv]](https://arxiv.org/abs/1911.11907)
 
 By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
