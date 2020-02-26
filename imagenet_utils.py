@@ -1,5 +1,6 @@
-# -*- coding: utf-8 -*-
-# File: imagenet_utils.py
+# 2020.02.26-Changed for utils for testing GhostNet on ImageNet
+#            Huawei Technologies Co., Ltd. <foss@huawei.com>
+# modified from https://github.com/tensorpack/tensorpack/blob/master/examples/ImageNetModels/imagenet_utils.py
 import cv2
 import numpy as np
 import multiprocessing

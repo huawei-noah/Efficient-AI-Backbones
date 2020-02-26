@@ -1,7 +1,6 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# main script for testing GhostNet on ImageNet
-# verified on TF-1.13.1, Tensorpack-0.9.7
+# 2020.02.26-Changed for main script for testing GhostNet on ImageNet
+#            Huawei Technologies Co., Ltd. <foss@huawei.com>
+# modified from https://github.com/tensorpack/tensorpack/blob/master/examples/ResNet/imagenet-resnet.py
 import argparse
 import numpy as np
 import math

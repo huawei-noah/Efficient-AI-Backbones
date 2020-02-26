@@ -23,7 +23,7 @@ We beat other SOTA lightweight CNNs such as **MobileNetV3** and **FBNet**.
 
 ## Implementation
 
-This repo provides the TensorFlow code and pretrained model of GhostNet on ImageNet. The PyTorch implementation can be found [here](https://github.com/iamhankai/ghostnet.pytorch).
+This repo provides the TensorFlow code and pretrained model of GhostNet on ImageNet. The PyTorch implementation can be found [https://github.com/iamhankai/ghostnet.pytorch](https://github.com/iamhankai/ghostnet.pytorch).
 
 `myconv2d.py` implemented `GhostModule` and `ghost_net.py` implemented `GhostNet`.
 
