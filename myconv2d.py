@@ -20,7 +20,7 @@ from tensorpack.models import BatchNorm, BNReLU, Conv2D
 import numpy as np
 import math
 import utils
-__all__ = ['DepthConv', 'GhostModule']
+__all__ = ['GhostModule', 'SELayer', 'MyConv2D', 'BNNoReLU']
 
 kernel_initializer = tf.contrib.layers.variance_scaling_initializer(2.0)
 
