@@ -1,9 +1,7 @@
 # GhostNet
 
-:white_check_mark: News: Our paper is accepted by CVPR 2020.
-
 ---
-GhostNet: More Features from Cheap Operations [[arXiv]](https://arxiv.org/abs/1911.11907)
+GhostNet: More Features from Cheap Operations. CVPR 2020. [[arXiv]](https://arxiv.org/abs/1911.11907)
 
 By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
 
@@ -23,7 +21,7 @@ We beat other SOTA lightweight CNNs such as **MobileNetV3** and **FBNet**.
 
 ## Implementation
 
-This repo provides the TensorFlow code and pretrained model of GhostNet on ImageNet. The PyTorch implementation can be found [https://github.com/iamhankai/ghostnet.pytorch](https://github.com/iamhankai/ghostnet.pytorch).
+This repo provides the TensorFlow code and pretrained model of GhostNet on ImageNet. The PyTorch implementation can be found at [https://github.com/iamhankai/ghostnet.pytorch](https://github.com/iamhankai/ghostnet.pytorch).
 
 `myconv2d.py` implemented `GhostModule` and `ghost_net.py` implemented `GhostNet`.
 
@@ -53,11 +51,11 @@ caffe_ilsvrc12 data can be downloaded from http://dl.caffe.berkeleyvision.org/ca
 
 ## Citation
 ```
-@article{ghostnet,
+@inproceedings{ghostnet,
   title={GhostNet: More Features from Cheap Operations},
   author={Han, Kai and Wang, Yunhe and Tian, Qi and Guo, Jianyuan and Xu, Chunjing and Xu, Chang},
-  journal={arXiv},
-  year={2019}
+  booktitle={CVPR},
+  year={2020}
 }
 ```
 
