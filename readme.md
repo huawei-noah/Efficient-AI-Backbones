@@ -1,6 +1,5 @@
 # GhostNet
 
----
 GhostNet: More Features from Cheap Operations. CVPR 2020. [[arXiv]](https://arxiv.org/abs/1911.11907)
 
 By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
@@ -13,7 +12,7 @@ By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
 
 - **Performance**
 
-We beat other SOTA lightweight CNNs such as **MobileNetV3** and **FBNet**.
+GhostNet beats other SOTA lightweight CNNs such as **MobileNetV3** and **FBNet**.
 
 <div align="center">
    <img src="./fig/flops_latency.png" width="720">
