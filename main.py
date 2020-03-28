@@ -8,7 +8,6 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import cv2
 from time import time
-import moxing as mox
 import zipfile
 
 import tensorflow as tf
