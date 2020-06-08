@@ -14,5 +14,5 @@ def ghostnet_1x(pretrained=False, **kwargs):
 	  model = ghostnet(num_classes=1000, width=1.0, dropout=0.2)
 	  if pretrained:
 	  	  state_dict = torch.hub.load_state_dict_from_url(state_dict_url, progress=True)
-	  	  model.load_state_dict()
+	  	  model.load_state_dict(state_dict)
 	  return model
