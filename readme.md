@@ -1,5 +1,11 @@
 # GhostNet
 
+**News** 
+
+2020/06/08 PyTorch code is included in this repo.
+
+---
+
 GhostNet: More Features from Cheap Operations. CVPR 2020. [[arXiv]](https://arxiv.org/abs/1911.11907)
 
 By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
@@ -21,8 +27,8 @@ GhostNet beats other SOTA lightweight CNNs such as **MobileNetV3** and **FBNet**
 ## Code
 
 This repo provides TensorFlow code and PyTorch code:
-- Tensorflow: [./tensorflow](https://github.com/huawei-noah/ghostnet/tensorflow)
-- PyTorch: [./pytorch](https://github.com/huawei-noah/ghostnet/pytorch)
+- Tensorflow: [./tensorflow](https://github.com/huawei-noah/ghostnet/tensorflow) with pretrained model.
+- PyTorch: [./pytorch](https://github.com/huawei-noah/ghostnet/pytorch) with pretrained model.
 
 ## Citation
 ```
@@ -35,7 +41,7 @@ This repo provides TensorFlow code and PyTorch code:
 ```
 
 ## Other versions
-This repo provides the TensorFlow code of GhostNet. Other versions can be found in the following:
+This repo provides the TensorFlow/PyTorch code of GhostNet. Other versions can be found in the following:
 
 0. Pytorch: [code](https://github.com/iamhankai/ghostnet.pytorch)
 1. Darknet: [cfg file](https://github.com/AlexeyAB/darknet/files/3997987/ghostnet.cfg.txt), and [description](https://github.com/AlexeyAB/darknet/issues/4418)
