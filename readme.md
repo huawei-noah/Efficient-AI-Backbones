@@ -27,8 +27,8 @@ GhostNet beats other SOTA lightweight CNNs such as **MobileNetV3** and **FBNet**
 ## Code
 
 This repo provides TensorFlow code and PyTorch code:
-- Tensorflow: [./tensorflow](https://github.com/huawei-noah/ghostnet/tensorflow) with pretrained model.
-- PyTorch: [./pytorch](https://github.com/huawei-noah/ghostnet/pytorch) with pretrained model.
+- Tensorflow: [./tensorflow](https://github.com/huawei-noah/ghostnet/tree/master/tensorflow) with pretrained model.
+- PyTorch: [./pytorch](https://github.com/huawei-noah/ghostnet/tree/master/pytorch) with pretrained model.
 
 ## Citation
 ```

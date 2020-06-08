@@ -3,7 +3,7 @@ import torch
 from pytorch.ghostnet import ghostnet
 
 
-state_dict_url = 'https://github.com/huawei-noah/ghostnet/ghostnet/models/state_dict_93.98.pth'
+state_dict_url = 'https://github.com/huawei-noah/ghostnet/blob/master/pytorch/models/state_dict_93.98.pth'
 
 
 def ghostnet_1x(pretrained=False, **kwargs):
