@@ -30,7 +30,7 @@ The code was verified on Python3.6, PyTorch-1.0+.
 ### Usage
 Run `python validate.py --eval --data=/path/to/imagenet/dir/` to evaluate on `val` set.
 
-You'll get the accuracy: top-1 acc=`0.9398` with only `142M` Flops (or say MAdds).
+You'll get the accuracy: top-1 acc=`0.7398` and top-5 acc=`0.9146` with only `142M` Flops (or say MAdds).
 
 ### Data Preparation
 ImageNet data dir should have the following structure, and `val` and `caffe_ilsvrc12` subdirs are essential:
