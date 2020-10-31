@@ -2,6 +2,8 @@
 
 **News** 
 
+2020/10/31 GhostNet+TinyNet achieves better performance. See details in our NeurIPS 2020 paper: [arXiv](https://arxiv.org/abs/2010.14819).
+
 2020/09/24 We release GhostNet models for more vision tasks on [MindSpore Hub](https://www.mindspore.cn/resources/hub) and [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
 
 2020/06/10 GhostNet is included in [PyTorch Hub](https://pytorch.org/hub/pytorch_vision_ghostnet/).
@@ -52,3 +54,4 @@ This repo provides the TensorFlow/PyTorch code of GhostNet. Other versions can b
 2. Gluon/Keras/Chainer: [code](https://github.com/osmr/imgclsmob)
 3. Paddle: [code](https://github.com/PaddlePaddle/PaddleClas/blob/master/ppcls/modeling/architectures/ghostnet.py)
 4. Pytorch for human pose estimation: [code](https://github.com/tensorboy/centerpose/blob/master/lib/models/backbones/ghost_net.py)
+5. YOLO with GhostNet backbone: [cdoe](https://github.com/HaloTrouvaille/YOLO-Multi-Backbones-Attention)
