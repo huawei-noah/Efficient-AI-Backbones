@@ -2,6 +2,8 @@
 
 **News** 
 
+2020/11/10 The code of TinyNet (NeurIPS 2020) has been release at [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet).
+
 2020/10/31 GhostNet+TinyNet achieves better performance. See details in our NeurIPS 2020 paper: [arXiv](https://arxiv.org/abs/2010.14819).
 
 2020/09/24 We release GhostNet models for more vision tasks on [MindSpore Hub](https://www.mindspore.cn/resources/hub) and [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
@@ -43,6 +45,13 @@ This repo provides TensorFlow code and PyTorch code:
   title={GhostNet: More Features from Cheap Operations},
   author={Han, Kai and Wang, Yunhe and Tian, Qi and Guo, Jianyuan and Xu, Chunjing and Xu, Chang},
   booktitle={CVPR},
+  year={2020}
+}
+@article{tinynet,
+  title={Model Rubik’s Cube: Twisting Resolution, Depth and Width for TinyNets},
+  author={Han, Kai and Wang, Yunhe and Zhang, Qiulin and Zhang, Wei and Xu, Chunjing and Zhang, Tong},
+  journal={Advances in Neural Information Processing Systems},
+  volume={33},
   year={2020}
 }
 ```
