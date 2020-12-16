@@ -1,9 +1,9 @@
 dependencies = ['torch']
 import torch
-from pytorch.ghostnet import ghostnet
+from ghostnet_pytorch.ghostnet import ghostnet
 
 
-state_dict_url = 'https://github.com/huawei-noah/ghostnet/raw/master/pytorch/models/state_dict_93.98.pth'
+state_dict_url = 'https://github.com/huawei-noah/ghostnet/raw/master/ghostnet_pytorch/models/state_dict_73.98.pth'
 
 
 def ghostnet_1x(pretrained=False, **kwargs):
