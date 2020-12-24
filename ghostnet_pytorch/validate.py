@@ -43,7 +43,7 @@ def main():
     args = parser.parse_args()
 
     model = ghostnet(num_classes=args.num_classes, width=args.width, dropout=args.dropout)
-    model.load_state_dict(torch.load('./models/state_dict_93.98.pth'))
+    model.load_state_dict(torch.load('./models/state_dict_73.98.pth'))
 
     if args.num_gpu > 1:
         model = torch.nn.DataParallel(model, device_ids=list(range(args.num_gpu))).cuda()
