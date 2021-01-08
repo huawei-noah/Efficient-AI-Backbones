@@ -1,3 +1,5 @@
+# 2020.06.09-GhostNet definition for pytorch hub
+#            Huawei Technologies Co., Ltd. <foss@huawei.com>
 dependencies = ['torch']
 import torch
 from ghostnet_pytorch.ghostnet import ghostnet
