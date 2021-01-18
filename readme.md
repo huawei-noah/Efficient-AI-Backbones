@@ -34,10 +34,12 @@ GhostNet beats other SOTA lightweight CNNs such as **MobileNetV3** and **FBNet**
 
 ## Code
 
-This repo provides TensorFlow code and PyTorch code:
-- Tensorflow: [./tensorflow](https://github.com/huawei-noah/ghostnet/tree/master/tensorflow) with pretrained model.
-- PyTorch: [./pytorch](https://github.com/huawei-noah/ghostnet/tree/master/pytorch) with pretrained model.
+This repo provides **pretrained models** and **inference code** for TensorFlow and PyTorch:
+- Tensorflow: [./tensorflow](https://github.com/huawei-noah/ghostnet/tree/master/ghostnet_tensorflow) with pretrained model.
+- PyTorch: [./pytorch](https://github.com/huawei-noah/ghostnet/tree/master/ghostnet_pytorch) with pretrained model.
 - We also opensource code on [MindSpore Hub](https://www.mindspore.cn/resources/hub) and [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
+
+For **training**, please refer to [tinynet](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet) or [timm](https://rwightman.github.io/pytorch-image-models/training_hparam_examples/#mobilenetv3-large-100-75766-top-1-92542-top-5).
 
 ## Citation
 ```
@@ -62,5 +64,7 @@ This repo provides the TensorFlow/PyTorch code of GhostNet. Other versions can b
 1. Darknet: [cfg file](https://github.com/AlexeyAB/darknet/files/3997987/ghostnet.cfg.txt), and [description](https://github.com/AlexeyAB/darknet/issues/4418)
 2. Gluon/Keras/Chainer: [code](https://github.com/osmr/imgclsmob)
 3. Paddle: [code](https://github.com/PaddlePaddle/PaddleClas/blob/master/ppcls/modeling/architectures/ghostnet.py)
-4. Pytorch for human pose estimation: [code](https://github.com/tensorboy/centerpose/blob/master/lib/models/backbones/ghost_net.py)
+4. Bolt inference framework: [benckmark](https://github.com/huawei-noah/bolt/blob/master/docs/BENCHMARK.md)
+4. Human pose estimation: [code](https://github.com/tensorboy/centerpose/blob/master/lib/models/backbones/ghost_net.py)
 5. YOLO with GhostNet backbone: [cdoe](https://github.com/HaloTrouvaille/YOLO-Multi-Backbones-Attention)
+6. Face recognition: [code](https://github.com/cavalleria/cavaface.pytorch/blob/master/backbone/ghostnet.py)
