@@ -26,7 +26,7 @@ By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
 
 - **Performance**
 
-GhostNet beats other SOTA lightweight CNNs such as **MobileNetV3** and **FBNet**.
+GhostNet beats other SOTA lightweight CNNs such as MobileNetV3 and FBNet.
 
 <div align="center">
    <img src="./fig/flops_latency.png" width="720">
@@ -66,5 +66,5 @@ This repo provides the TensorFlow/PyTorch code of GhostNet. Other versions can b
 3. Paddle: [code](https://github.com/PaddlePaddle/PaddleClas/blob/master/ppcls/modeling/architectures/ghostnet.py)
 4. Bolt inference framework: [benckmark](https://github.com/huawei-noah/bolt/blob/master/docs/BENCHMARK.md)
 4. Human pose estimation: [code](https://github.com/tensorboy/centerpose/blob/master/lib/models/backbones/ghost_net.py)
-5. YOLO with GhostNet backbone: [cdoe](https://github.com/HaloTrouvaille/YOLO-Multi-Backbones-Attention)
-6. Face recognition: [code](https://github.com/cavalleria/cavaface.pytorch/blob/master/backbone/ghostnet.py)
+5. YOLO with GhostNet backbone: [code](https://github.com/HaloTrouvaille/YOLO-Multi-Backbones-Attention)
+6. Face recognition: [cavaface](https://github.com/cavalleria/cavaface.pytorch/blob/master/backbone/ghostnet.py), [FaceX-Zoo](https://github.com/JDAI-CV/FaceX-Zoo)
