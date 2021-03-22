@@ -1,4 +1,4 @@
-# GhostNet
+# CV Backbones (including GhostNet, TinyNet, etc.)
 
 **News** 
 
@@ -13,6 +13,24 @@
 2020/06/08 PyTorch code is included in this repo.
 
 ---
+
+## GhostNet Code
+
+This repo provides **pretrained models** and **inference code** for TensorFlow and PyTorch:
+- Tensorflow: [./tensorflow](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_tensorflow) with pretrained model.
+- PyTorch: [./pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_pytorch) with pretrained model.
+- We also opensource code on [MindSpore Hub](https://www.mindspore.cn/resources/hub) and [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
+
+For **training**, please refer to [tinynet](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet) or [timm](https://rwightman.github.io/pytorch-image-models/training_hparam_examples/#mobilenetv3-large-100-75766-top-1-92542-top-5).
+
+## TinyNet Code
+
+This repo provides **pretrained models** and **inference code** for PyTorch:
+- PyTorch: [./pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_pytorch) with pretrained model.
+- We also opensource training code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
+
+
+## Desription
 
 GhostNet: More Features from Cheap Operations. CVPR 2020. [[Paper]](http://openaccess.thecvf.com/content_CVPR_2020/html/Han_GhostNet_More_Features_From_Cheap_Operations_CVPR_2020_paper.html) [[arXiv]](https://arxiv.org/abs/1911.11907)
 
@@ -32,14 +50,6 @@ GhostNet beats other SOTA lightweight CNNs such as MobileNetV3 and FBNet.
    <img src="./fig/flops_latency.png" width="720">
 </div>
 
-## Code
-
-This repo provides **pretrained models** and **inference code** for TensorFlow and PyTorch:
-- Tensorflow: [./tensorflow](https://github.com/huawei-noah/ghostnet/tree/master/ghostnet_tensorflow) with pretrained model.
-- PyTorch: [./pytorch](https://github.com/huawei-noah/ghostnet/tree/master/ghostnet_pytorch) with pretrained model.
-- We also opensource code on [MindSpore Hub](https://www.mindspore.cn/resources/hub) and [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
-
-For **training**, please refer to [tinynet](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet) or [timm](https://rwightman.github.io/pytorch-image-models/training_hparam_examples/#mobilenetv3-large-100-75766-top-1-92542-top-5).
 
 ## Citation
 ```
