@@ -12,7 +12,7 @@ By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
 
 - **Performance**
 
-GhostNet beats other SOTA lightweight CNNs such as **MobileNetV3** and **FBNet**.
+GhostNet beats other SOTA lightweight CNNs such as MobileNetV3 and FBNet.
 
 <div align="center">
    <img src="../fig/flops_latency.png" width="720">
@@ -28,7 +28,7 @@ This folder provides the PyTorch code and pretrained model of GhostNet on ImageN
 The code was verified on Python3.6, PyTorch-1.0+.
 
 ### Usage
-Run `python validate.py --eval --data=/path/to/imagenet/dir/` to evaluate on `val` set.
+Run `python validate.py --data=/path/to/imagenet/dir/` to evaluate on `val` set.
 
 You'll get the accuracy: top-1 acc=`0.7398` and top-5 acc=`0.9146` with only `142M` Flops (or say MAdds).
 
@@ -43,10 +43,7 @@ dir/
       ILSVRC2012_val_00000293.JPEG
       ...
     ...
-  caffe_ilsvrc12/
-    ...
 ```
-caffe_ilsvrc12 data can be downloaded from http://dl.caffe.berkeleyvision.org/caffe_ilsvrc12.tar.gz
 
 ## Citation
 ```
