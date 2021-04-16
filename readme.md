@@ -1,4 +1,9 @@
 # CV Backbones (including GhostNet, TinyNet, etc.)
+- [GhostNet Code](#ghostnet-code)
+- [TinyNet Code](#tinynet-code)
+- [Model Desription](#model-desription)
+- [Citation](#citation)
+- [Other versions](#other-versions)
 
 **News** 
 
@@ -28,19 +33,15 @@ This repo provides **pretrained models** and **inference code** for PyTorch:
 - We also opensource training code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
 
 
-## Desription
+## Model Desription
 
 GhostNet: More Features from Cheap Operations. CVPR 2020. [[Paper]](http://openaccess.thecvf.com/content_CVPR_2020/html/Han_GhostNet_More_Features_From_Cheap_Operations_CVPR_2020_paper.html) [[arXiv]](https://arxiv.org/abs/1911.11907)
 
 By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
 
-- **Approach**
-
 <div align="center">
    <img src="./fig/ghost_module.png" width="720">
 </div>
-
-- **Performance**
 
 GhostNet beats other SOTA lightweight CNNs such as MobileNetV3 and FBNet.
 
@@ -69,6 +70,7 @@ GhostNet beats other SOTA lightweight CNNs such as MobileNetV3 and FBNet.
 ## Other versions
 This repo provides the TensorFlow/PyTorch code of GhostNet. Other versions and applications can be found in the following:
 
+0. timm: [code with pretrained model](https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/ghostnet.py)
 1. Darknet: [cfg file](https://github.com/AlexeyAB/darknet/files/3997987/ghostnet.cfg.txt), and [description](https://github.com/AlexeyAB/darknet/issues/4418)
 2. Gluon/Keras/Chainer: [code](https://github.com/osmr/imgclsmob)
 3. Paddle: [code](https://github.com/PaddlePaddle/PaddleClas/blob/master/ppcls/modeling/architectures/ghostnet.py)
