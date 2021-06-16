@@ -2,13 +2,13 @@
 By Kai Han, An Xiao, Enhua Wu, Jianyuan Guo, Chunjing Xu, Yunhe Wang. [[arXiv]](https://arxiv.org/abs/2103.00112)
 
 ## Requirments
-Pytorch 1.7+
+Pytorch 1.7.0,
 timm 0.3.2
 
 ## Code
-Train:
+Training example for 8 GPUs:
 ```
-python train.py
+python train.py /path/to/imagenet/ --output /path/to/save/models/ --model tnt_s_patch16_224 --sched cosine --epochs 300 --opt adamw -j 8 --warmup-lr 1e-6 --mixup .8 --cutmix 1.0 --model-ema --model-ema-decay 0.99996 --aa rand-m9-mstd0.5-inc1 --color-jitter 0.4 --warmup-epochs 5 --opt-eps 1e-8 --repeated-aug --remode pixel --reprob 0.25 --amp --lr 1e-3 --weight-decay .05 --drop 0 --drop-path .1 -b 128
 ```
 
 The pretrained models will be released as soon.
