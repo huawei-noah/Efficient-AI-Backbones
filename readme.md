@@ -1,11 +1,14 @@
-# CV Backbones (including GhostNet, TinyNet, etc.)
+# CV Backbones 
+including GhostNet, TinyNet, TNT (Transformer in Transformer).
 - [GhostNet Code](#ghostnet-code)
 - [TinyNet Code](#tinynet-code)
-- [Model Desription](#model-desription)
+- [TNT Code](#tnt-code)
 - [Citation](#citation)
 - [Other versions](#other-versions)
 
 **News** 
+
+2021/06/15 The code of TNT (Transformer in Transformer) has been released in this repo.
 
 2020/11/10 The code of TinyNet (NeurIPS 2020) has been release at [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet).
 
@@ -32,22 +35,11 @@ This repo provides **pretrained models** and **inference code** for PyTorch:
 - PyTorch: [./tinynet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tinynet_pytorch) with pretrained model.
 - We also opensource training code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
 
+## TNT Code
 
-## Model Desription
-
-GhostNet: More Features from Cheap Operations. CVPR 2020. [[Paper]](http://openaccess.thecvf.com/content_CVPR_2020/html/Han_GhostNet_More_Features_From_Cheap_Operations_CVPR_2020_paper.html) [[arXiv]](https://arxiv.org/abs/1911.11907)
-
-By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
-
-<div align="center">
-   <img src="./fig/ghost_module.png" width="720">
-</div>
-
-GhostNet beats other SOTA lightweight CNNs such as MobileNetV3 and FBNet.
-
-<div align="center">
-   <img src="./fig/flops_latency.png" width="720">
-</div>
+This repo provides **training code** of TNT (Transformer in Transformer) for PyTorch:
+- PyTorch: [./tinynet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch).
+- We also opensource code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/TNT).
 
 
 ## Citation
@@ -58,16 +50,21 @@ GhostNet beats other SOTA lightweight CNNs such as MobileNetV3 and FBNet.
   booktitle={CVPR},
   year={2020}
 }
-@article{tinynet,
+@inproceedings{tinynet,
   title={Model Rubik’s Cube: Twisting Resolution, Depth and Width for TinyNets},
   author={Han, Kai and Wang, Yunhe and Zhang, Qiulin and Zhang, Wei and Xu, Chunjing and Zhang, Tong},
-  journal={Advances in Neural Information Processing Systems},
-  volume={33},
+  booktitle={NeurIPS},
   year={2020}
+}
+@article{tnt,
+  title={Transformer in transformer},
+  author={Han, Kai and Xiao, An and Wu, Enhua and Guo, Jianyuan and Xu, Chunjing and Wang, Yunhe},
+  journal={arXiv preprint arXiv:2103.00112},
+  year={2021}
 }
 ```
 
-## Other versions
+## Other versions of GhostNet
 This repo provides the TensorFlow/PyTorch code of GhostNet. Other versions and applications can be found in the following:
 
 0. timm: [code with pretrained model](https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/ghostnet.py)
