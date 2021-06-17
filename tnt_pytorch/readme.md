@@ -5,7 +5,8 @@ By Kai Han, An Xiao, Enhua Wu, Jianyuan Guo, Chunjing Xu, Yunhe Wang. [[arXiv]](
 
 ## Requirements
 Pytorch 1.7.0,
-timm 0.3.2
+timm 0.3.2,
+apex
 
 ## Code
 Training example for 8 GPUs:
