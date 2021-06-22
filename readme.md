@@ -1,5 +1,5 @@
 # CV Backbones 
-including GhostNet, TinyNet, TNT (Transformer in Transformer).
+including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawei Noah's Ark Lab.
 - [GhostNet Code](#ghostnet-code)
 - [TinyNet Code](#tinynet-code)
 - [TNT Code](#tnt-code)
@@ -38,7 +38,7 @@ This repo provides **pretrained models** and **inference code** for PyTorch:
 ## TNT Code
 
 This repo provides **training code** of TNT (Transformer in Transformer) for PyTorch:
-- PyTorch: [./tinynet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch).
+- PyTorch: [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch).
 - We also opensource code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/TNT).
 
 
@@ -74,4 +74,4 @@ This repo provides the TensorFlow/PyTorch code of GhostNet. Other versions and a
 4. Bolt inference framework: [benckmark](https://github.com/huawei-noah/bolt/blob/master/docs/BENCHMARK.md)
 5. Human pose estimation: [code](https://github.com/tensorboy/centerpose/blob/master/lib/models/backbones/ghost_net.py)
 6. YOLO with GhostNet backbone: [code](https://github.com/HaloTrouvaille/YOLO-Multi-Backbones-Attention)
-7. Face recognition: [cavaface](https://github.com/cavalleria/cavaface.pytorch/blob/master/backbone/ghostnet.py), [FaceX-Zoo](https://github.com/JDAI-CV/FaceX-Zoo)
+7. Face recognition: [cavaface](https://github.com/cavalleria/cavaface.pytorch/blob/master/backbone/ghostnet.py), [FaceX-Zoo](https://github.com/JDAI-CV/FaceX-Zoo), [TFace](https://github.com/Tencent/TFace)
