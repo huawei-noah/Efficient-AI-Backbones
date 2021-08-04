@@ -1,5 +1,5 @@
 # Transformer in Transformer (TNT)
-By Kai Han, An Xiao, Enhua Wu, Jianyuan Guo, Chunjing Xu, Yunhe Wang. [[arXiv]](https://arxiv.org/abs/2103.00112)
+By Kai Han, An Xiao, Enhua Wu, Jianyuan Guo, Chunjing Xu, Yunhe Wang. [[arXiv link]](https://arxiv.org/abs/2103.00112)
 
 ![image](https://user-images.githubusercontent.com/9500784/122160150-ff1bca80-cea1-11eb-9329-be5031bad78e.png)
 
@@ -18,8 +18,8 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py /path/to/imagenet
 
 |Model|Params (M)|FLOPs (B)|Top-1|Top-5|URL|
 |-|-|-|-|-|-|
-|TNT-S|23.8|5.2|81.5|95.7|[BaiduDisk](https://pan.baidu.com/s/1AwJDWEPl-hqLHfUvqmlqxQ), Password: 7ndi|
-|TNT-B|65.6|14.1|82.8|96.3|[BaiduDisk](https://pan.baidu.com/s/1_TemN7kvWuYeZohisObQ1w), Password: 2gb7|
+|TNT-S|23.8|5.2|81.5|95.7|[[BaiduDisk]](https://pan.baidu.com/s/1AwJDWEPl-hqLHfUvqmlqxQ), Password: 7ndi|
+|TNT-B|65.6|14.1|82.9|96.3|[[BaiduDisk]](https://pan.baidu.com/s/1_TemN7kvWuYeZohisObQ1w), Password: 2gb7|
 
 
 ## Citation
