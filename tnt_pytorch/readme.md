@@ -9,12 +9,18 @@ timm 0.3.2,
 apex
 
 ## Code
-Training example for 8 GPUs:
+- Training example for 8 GPUs:
 ```
 python -m torch.distributed.launch --nproc_per_node=8 train.py /path/to/imagenet/ --model tnt_s_patch16_224 --sched cosine --epochs 300 --opt adamw -j 8 --warmup-lr 1e-6 --mixup .8 --cutmix 1.0 --model-ema --model-ema-decay 0.99996 --aa rand-m9-mstd0.5-inc1 --color-jitter 0.4 --warmup-epochs 5 --opt-eps 1e-8 --repeated-aug --remode pixel --reprob 0.25 --amp --lr 1e-3 --weight-decay .05 --drop 0 --drop-path .1 -b 128 --output /path/to/save/models/
 ```
 
-The pretrained models will be released as soon.
+- Pretrained models
+
+|Model|Params (M)|FLOPs (B)|Top-1|Top-5|URL|
+|-|-|-|-|-|-|
+|TNT-S|23.8|5.2|81.5|95.7|[BaiduDisk](https://pan.baidu.com/s/1AwJDWEPl-hqLHfUvqmlqxQ), Password: 7ndi|
+|TNT-B|65.6|14.1|82.8|96.3|[BaiduDisk](https://pan.baidu.com/s/1_TemN7kvWuYeZohisObQ1w), Password: 2gb7|
+
 
 ## Citation
 ```
