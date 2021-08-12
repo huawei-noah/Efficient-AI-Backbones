@@ -41,7 +41,7 @@ from timm.scheduler import create_scheduler
 from timm.utils import ApexScaler, NativeScaler
 
 from data.myloader import create_loader
-import models.tnt
+import tnt
 
 try:
     from apex import amp
@@ -270,6 +270,8 @@ parser.add_argument("--train_url", type=str)
 parser.add_argument('--attn_ratio', type=float, default=1.,
                     help='attention ratio')
 parser.add_argument("--pretrain_path", default=None, type=str)
+parser.add_argument("--evaluate", action='store_true', default=False,
+                    help='whether evaluate the model')
 
 
 def _parse_args():
@@ -341,7 +343,7 @@ def main():
     ################## pretrain ############
     if args.pretrain_path is not None:
         print('Loading:', args.pretrain_path)
-        state_dict = torch.load(args.pretrain_path)['state_dict']
+        state_dict = torch.load(args.pretrain_path)
         model.load_state_dict(state_dict, strict=False)
         print('Pretrain weights loaded.')
     ################### flops #################
@@ -564,6 +566,11 @@ def main():
     else:
         train_loss_fn = nn.CrossEntropyLoss().cuda()
     validate_loss_fn = nn.CrossEntropyLoss().cuda()
+    
+    if args.evaluate:
+        eval_metrics = validate(model, loader_eval, validate_loss_fn, args, amp_autocast=amp_autocast)
+        print(eval_metrics)
+        return
     
     eval_metric = args.eval_metric
     best_metric = None
