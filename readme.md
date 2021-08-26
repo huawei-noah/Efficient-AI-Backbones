@@ -3,10 +3,13 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawe
 - [GhostNet Code](#ghostnet-code)
 - [TinyNet Code](#tinynet-code)
 - [TNT Code](#tnt-code)
+- [LegoNet Code](#legonet-code)
 - [Citation](#citation)
 - [Other versions](#other-versions)
 
-**News** 
+**News**
+
+2021/08/26 The code of LegoNet (https://github.com/huawei-noah/LegoNet) has been merged into this repo.
 
 2021/06/15 The code of TNT (Transformer in Transformer) has been released in this repo.
 
@@ -43,7 +46,7 @@ This repo provides **training code** of TNT (Transformer in Transformer) for PyT
 
 ## LegoNet Code
 This repo provides the implementation of ICML2019 paper [LegoNet: Efficient Convolutional Neural Networks with Lego Filters](http://proceedings.mlr.press/v97/yang19c/yang19c.pdf)
-- PyTorch: [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/legonet_pytorch).
+- PyTorch: [./legonet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/legonet_pytorch).
 
 
 ## Citation
