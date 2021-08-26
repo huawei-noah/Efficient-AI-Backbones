@@ -41,6 +41,10 @@ This repo provides **training code** of TNT (Transformer in Transformer) for PyT
 - PyTorch: [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch).
 - We also opensource code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/TNT).
 
+## LegoNet Code
+This repo provides the implementation of ICML2019 paper [LegoNet: Efficient Convolutional Neural Networks with Lego Filters](http://proceedings.mlr.press/v97/yang19c/yang19c.pdf)
+- PyTorch: [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/legonet_pytorch).
+
 
 ## Citation
 ```
@@ -62,6 +66,12 @@ This repo provides **training code** of TNT (Transformer in Transformer) for PyT
   journal={arXiv preprint arXiv:2103.00112},
   year={2021}
 }
+@inproceedings{legonet,
+    title={LegoNet: Efficient Convolutional Neural Networks with Lego Filters},
+    author={Yang, Zhaohui and Wang, Yunhe and Liu, Chuanjian and Chen, Hanting and Xu, Chunjing and Shi, Boxin and Xu, Chao and Xu, Chang},
+    booktitle={ICML},
+    year={2019}
+  }
 ```
 
 ## Other versions of GhostNet
