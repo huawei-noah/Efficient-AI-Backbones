@@ -39,6 +39,7 @@ python train.py /path/to/imagenet/ --model tnt_s_patch16_224 -b 256 --pretrain_p
 ```
 
 ## Third-party implementations
-1. Pytorch with **ImageNet pretrained models**: https://www.github.com/rwightman/pytorch-image-models/tree/master/timm/models/tnt.py
-2. JAX/FLAX: https://github.com/NZ99/transformer_in_transformer_flax
-3. MindSpore Code: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/TNT and pretrained weights on Oxford-IIIT Pets dataset: https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/tnt_v1.0_oxford_pets
+1. Pytorch (timm) with ImageNet pretrained models: https://www.github.com/rwightman/pytorch-image-models/tree/master/timm/models/tnt.py
+2. Pytorch (mmclassification) with ImageNet pretrained models: https://github.com/open-mmlab/mmclassification/blob/master/docs/model_zoo.md
+3. JAX/FLAX: https://github.com/NZ99/transformer_in_transformer_flax
+4. MindSpore Code: https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/TNT and pretrained weights on Oxford-IIIT Pets dataset: https://www.mindspore.cn/resources/hub/details?noah-cvlab/gpu/1.1/tnt_v1.0_oxford_pets
