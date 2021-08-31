@@ -23,6 +23,8 @@ PyTorch 1.3, timm 0.1.20
 
 This repo contains pytorch code of TinyNet.
 
+Before running, please download the checkpoints from [here](https://github.com/huawei-noah/CV-Backbones/releases/tag/v1.2.0), and put them under `./models/`.
+
 `Python eval.py /path/to/imagenet/val/ --model_name=tinynet_a`
 
 `Python eval.py /path/to/imagenet/val/ --model_name=tinynet_b`
@@ -33,7 +35,7 @@ This repo contains pytorch code of TinyNet.
 
 `Python eval.py /path/to/imagenet/val/ --model_name=tinynet_e`
 
-The mindspore code has been also released: [[MindSpore code]](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet). 
+The mindspore code has also been released: [[MindSpore code]](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet). 
 
 ## Citation
 ```
