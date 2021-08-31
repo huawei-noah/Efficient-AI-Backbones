@@ -4,10 +4,13 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawe
 - [TinyNet Code](#tinynet-code)
 - [TNT Code](#tnt-code)
 - [LegoNet Code](#legonet-code)
+- [Versatile Filters Code](#versatile-filters-code)
 - [Citation](#citation)
 - [Other versions](#other-versions)
 
 **News**
+
+2021/08/31 The code of Versatile Filters (https://github.com/huawei-noah/Versatile-Filters) has been merged into this repo.
 
 2021/08/26 The code of LegoNet (https://github.com/huawei-noah/LegoNet) has been merged into this repo.
 
@@ -45,8 +48,12 @@ This repo provides **training code** of TNT (Transformer in Transformer) for PyT
 - We also opensource code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/TNT).
 
 ## LegoNet Code
-This repo provides the implementation of ICML2019 paper [LegoNet: Efficient Convolutional Neural Networks with Lego Filters](http://proceedings.mlr.press/v97/yang19c/yang19c.pdf)
+This repo provides the implementation of paper [LegoNet: Efficient Convolutional Neural Networks with Lego Filters (ICML 2019)](http://proceedings.mlr.press/v97/yang19c/yang19c.pdf)
 - PyTorch: [./legonet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/legonet_pytorch).
+
+## Versatile Filters Code
+This repo provides the implementation of paper [Learning Versatile Filters for Efficient Convolutional Neural Networks (NeurIPS 2018)](https://papers.nips.cc/paper/7433-learning-versatile-filters-for-efficient-convolutional-neural-networks)
+- PyTorch: [./versatile_filters](https://github.com/huawei-noah/CV-backbones/tree/master/versatile_filters).
 
 
 ## Citation
@@ -75,6 +82,12 @@ This repo provides the implementation of ICML2019 paper [LegoNet: Efficient Conv
     booktitle={ICML},
     year={2019}
   }
+@inproceedings{wang2018learning,
+  title={Learning versatile filters for efficient convolutional neural networks},
+  author={Wang, Yunhe and Xu, Chang and Chunjing, XU and Xu, Chao and Tao, Dacheng},
+  booktitle={NeurIPS},
+  year={2018}
+}
 ```
 
 ## Other versions of GhostNet
