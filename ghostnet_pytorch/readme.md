@@ -1,6 +1,6 @@
 # GhostNet
 
-GhostNet: More Features from Cheap Operations. CVPR 2020. [[arXiv]](https://arxiv.org/abs/1911.11907)
+GhostNet: More Features from Cheap Operations. CVPR 2020. [[arXiv]](https://arxiv.org/abs/1911.11907) [[Most Influential CVPR 2020 Papers]](https://www.paperdigest.org/2021/08/most-influential-cvpr-papers-2021-08/)
 
 By Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, Chang Xu.
 
