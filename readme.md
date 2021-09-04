@@ -10,17 +10,13 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawe
 
 **News**
 
-2021/08/31 The code of Versatile Filters (https://github.com/huawei-noah/Versatile-Filters) has been merged into this repo.
+2021/08/30 GhostNet paper is selected as the **[Most Influential CVPR 2020 Papers](https://www.paperdigest.org/2021/08/most-influential-cvpr-papers-2021-08/)**.
 
-2021/08/26 The code of LegoNet (https://github.com/huawei-noah/LegoNet) has been merged into this repo.
+2021/08/26 The codes of [LegoNet](https://github.com/huawei-noah/LegoNet) and [Versatile Filters](https://github.com/huawei-noah/Versatile-Filters) has been merged into this repo.
 
 2021/06/15 The code of TNT (Transformer in Transformer) has been released in this repo.
 
-2020/11/10 The code of TinyNet (NeurIPS 2020) has been release at [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet).
-
 2020/10/31 GhostNet+TinyNet achieves better performance. See details in our NeurIPS 2020 paper: [arXiv](https://arxiv.org/abs/2010.14819).
-
-2020/09/24 We release GhostNet models for more vision tasks on [MindSpore Hub](https://www.mindspore.cn/resources/hub) and [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
 
 2020/06/10 GhostNet is included in [PyTorch Hub](https://pytorch.org/hub/pytorch_vision_ghostnet/).
 
@@ -28,7 +24,7 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawe
 
 ## GhostNet Code
 
-This repo provides **pretrained models** and **inference code** for TensorFlow and PyTorch:
+This repo provides GhostNet **pretrained models** and **inference code** for TensorFlow and PyTorch:
 - Tensorflow: [./ghostnet_tensorflow](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_tensorflow) with pretrained model.
 - PyTorch: [./ghostnet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_pytorch) with pretrained model.
 - We also opensource code on [MindSpore Hub](https://www.mindspore.cn/resources/hub) and [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
@@ -37,7 +33,7 @@ For **training**, please refer to [tinynet](https://gitee.com/mindspore/mindspor
 
 ## TinyNet Code
 
-This repo provides **pretrained models** and **inference code** for PyTorch:
+This repo provides TinyNet **pretrained models** and **inference code** for PyTorch:
 - PyTorch: [./tinynet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tinynet_pytorch) with pretrained model.
 - We also opensource training code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
 
