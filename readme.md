@@ -10,6 +10,8 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawe
 
 **News**
 
+2021/09/18 The extended version of [Versatile Filters](https://github.com/huawei-noah/CV-backbones/tree/master/versatile_filters) is accepted by T-PAMI.
+
 2021/08/30 GhostNet paper is selected as the **[Most Influential CVPR 2020 Papers](https://www.paperdigest.org/2021/08/most-influential-cvpr-papers-2021-08/)**.
 
 2021/08/26 The codes of [LegoNet](https://github.com/huawei-noah/LegoNet) and [Versatile Filters](https://github.com/huawei-noah/Versatile-Filters) has been merged into this repo.
@@ -39,7 +41,7 @@ This repo provides TinyNet **pretrained models** and **inference code** for PyTo
 
 ## TNT Code
 
-This repo provides **training code** of TNT (Transformer in Transformer) for PyTorch:
+This repo provides **training code** and **pretrained models** of TNT (Transformer in Transformer) for PyTorch:
 - PyTorch: [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch).
 - We also opensource code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/TNT).
 
