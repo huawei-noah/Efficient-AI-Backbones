@@ -10,6 +10,8 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawe
 
 **News**
 
+2021/09/28 The paper of TNT (Transformer in Transformer) is accepted by NeurIPS 2021.
+
 2021/09/18 The extended version of [Versatile Filters](https://github.com/huawei-noah/CV-backbones/tree/master/versatile_filters) is accepted by T-PAMI.
 
 2021/08/30 GhostNet paper is selected as the **[Most Influential CVPR 2020 Papers](https://www.paperdigest.org/2021/08/most-influential-cvpr-papers-2021-08/)**.
@@ -71,7 +73,7 @@ This repo provides the implementation of paper [Learning Versatile Filters for E
 @article{tnt,
   title={Transformer in transformer},
   author={Han, Kai and Xiao, An and Wu, Enhua and Guo, Jianyuan and Xu, Chunjing and Wang, Yunhe},
-  journal={arXiv preprint arXiv:2103.00112},
+  journal={NeurIPS},
   year={2021}
 }
 @inproceedings{legonet,
