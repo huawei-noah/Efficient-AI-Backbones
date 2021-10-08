@@ -1,5 +1,5 @@
 # Transformer in Transformer (TNT)
-By Kai Han, An Xiao, Enhua Wu, Jianyuan Guo, Chunjing Xu, Yunhe Wang. [[arXiv link]](https://arxiv.org/abs/2103.00112)
+By Kai Han, An Xiao, Enhua Wu, Jianyuan Guo, Chunjing Xu, Yunhe Wang. NeurIPS 2021. [[arXiv link]](https://arxiv.org/abs/2103.00112)
 
 ![image](https://user-images.githubusercontent.com/9500784/122160150-ff1bca80-cea1-11eb-9329-be5031bad78e.png)
 
@@ -28,13 +28,11 @@ python train.py /path/to/imagenet/ --model tnt_s_patch16_224 -b 256 --pretrain_p
 
 ## Citation
 ```
-@misc{han2021transformer,
-      title={Transformer in Transformer}, 
-      author={Kai Han and An Xiao and Enhua Wu and Jianyuan Guo and Chunjing Xu and Yunhe Wang},
-      year={2021},
-      eprint={2103.00112},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{tnt,
+  title={Transformer in transformer},
+  author={Han, Kai and Xiao, An and Wu, Enhua and Guo, Jianyuan and Xu, Chunjing and Wang, Yunhe},
+  booktitle={NeurIPS},
+  year={2021}
 }
 ```
 
