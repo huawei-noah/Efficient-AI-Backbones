@@ -70,10 +70,10 @@ This repo provides the implementation of paper [Learning Versatile Filters for E
   booktitle={NeurIPS},
   year={2020}
 }
-@article{tnt,
+@inproceedings{tnt,
   title={Transformer in transformer},
   author={Han, Kai and Xiao, An and Wu, Enhua and Guo, Jianyuan and Xu, Chunjing and Wang, Yunhe},
-  journal={NeurIPS},
+  booktitle={NeurIPS},
   year={2021}
 }
 @inproceedings{legonet,
