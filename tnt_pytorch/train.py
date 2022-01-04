@@ -42,6 +42,7 @@ from timm.utils import ApexScaler, NativeScaler
 
 from data.myloader import create_loader
 import tnt
+import pyramid_tnt
 
 try:
     from apex import amp
