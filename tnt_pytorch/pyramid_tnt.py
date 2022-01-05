@@ -47,7 +47,7 @@ def _cfg(url='', **kwargs):
 
 
 default_cfgs = {
-    'tnt_s_patch16_192': _cfg(
+    'tnt_ti_patch16_192': _cfg(
         input_size=(3, 192, 192), mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5),
     ),
     'tnt_s_patch16_256': _cfg(
@@ -431,8 +431,8 @@ class PyramidTNT(nn.Module):
 
     def forward_features(self, x):
         inner_tokens, outer_tokens, (H_out, W_out), (H_in, W_in) = self.patch_embed(x)
-        inner_tokens += self.inner_pos # B*N, 8*8, C
-        outer_tokens += self.pos_drop(self.outer_pos)  # B, N, D
+        inner_tokens = inner_tokens + self.inner_pos # B*N, 8*8, C
+        outer_tokens = outer_tokens + self.pos_drop(self.outer_pos)  # B, N, D
         
         for i in range(4):
             if i > 0:
@@ -474,7 +474,7 @@ def ptnt_ti_patch16_192(pretrained=False, **kwargs):
     }
     
     model = PyramidTNT(configs=configs, img_size=192, qkv_bias=False, **kwargs)
-    model.default_cfg = default_cfgs['tnt_s_patch16_192']
+    model.default_cfg = default_cfgs['tnt_ti_patch16_192']
     if pretrained:
         load_pretrained(
             model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3), filter_fn=_conv_filter)
