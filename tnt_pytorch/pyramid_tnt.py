@@ -285,7 +285,7 @@ class Stem(nn.Module):
         self.inner_convs = nn.Sequential(
             nn.Conv2d(inner_dim*2, inner_dim, 3, stride=1, padding=1),
             nn.BatchNorm2d(inner_dim),
-            nn.ReLU(inplace=True),
+            nn.ReLU(inplace=False),
         )
         self.outer_convs = nn.Sequential(
             nn.Conv2d(inner_dim*2, inner_dim*4, 3, stride=2, padding=1),
@@ -296,7 +296,7 @@ class Stem(nn.Module):
             nn.ReLU(inplace=True),
             nn.Conv2d(inner_dim*8, outer_dim, 3, stride=1, padding=1),
             nn.BatchNorm2d(outer_dim),
-            nn.ReLU(inplace=True),
+            nn.ReLU(inplace=False),
         )
         
         self.unfold = nn.Unfold(kernel_size=4, padding=0, stride=4)
