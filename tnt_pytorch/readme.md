@@ -1,4 +1,4 @@
-# Transformer in Transformer (TNT)
+# Transformer in Transformer (TNT) and PyramidTNT
 By Kai Han, An Xiao, Enhua Wu, Jianyuan Guo, Chunjing Xu, Yunhe Wang. NeurIPS 2021. [[arXiv link]](https://arxiv.org/abs/2103.00112)
 
 ![image](https://user-images.githubusercontent.com/9500784/122160150-ff1bca80-cea1-11eb-9329-be5031bad78e.png)
@@ -33,7 +33,7 @@ python train.py /path/to/imagenet/ --model tnt_s_patch16_224 -b 256 --pretrain_p
 
 - Training example for 8 GPUs:
 ```
-python -m torch.distributed.launch --nproc_per_node=8 train.py /path/to/imagenet/ --model ptnt_s_patch16_224 --sched cosine --epochs 300 --opt adamw -j 8 --warmup-lr 1e-6 --mixup .8 --cutmix 1.0 --model-ema --model-ema-decay 0.99996 --aa rand-m9-mstd0.5-inc1 --color-jitter 0.4 --warmup-epochs 20 --opt-eps 1e-8 --repeated-aug --remode pixel --reprob 0.25 --amp --lr 1e-3 --weight-decay .05 --drop 0 --drop-path .1 -b 128 --output /path/to/save/models/
+python -m torch.distributed.launch --nproc_per_node=8 train.py /path/to/imagenet/ --model ptnt_s_patch16_256 --sched cosine --epochs 300 --opt adamw -j 8 --warmup-lr 1e-6 --mixup .8 --cutmix 1.0 --model-ema --model-ema-decay 0.99996 --aa rand-m9-mstd0.5-inc1 --color-jitter 0.4 --warmup-epochs 20 --opt-eps 1e-8 --repeated-aug --remode pixel --reprob 0.25 --amp --lr 1e-3 --weight-decay .05 --drop 0 --drop-path .1 -b 128 --output /path/to/save/models/
 ```
 
 - Pretrained models
@@ -47,7 +47,7 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py /path/to/imagenet
 
 - Evaluate example:
 ```
-python train.py /path/to/imagenet/ --model ptnt_s_patch16_224 -b 256 --pretrain_path /path/to/pretrained/model/ --evaluate
+python train.py /path/to/imagenet/ --model ptnt_s_patch16_256 -b 256 --pretrain_path /path/to/pretrained/model/ --evaluate
 ```
 
 
