@@ -11,6 +11,8 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawe
 
 **News**
 
+2022/01/06 The extended version of [GhostNet](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_pytorch) is accepted by IJCV.
+
 2022/01/05 PyramidTNT: An improved TNT baseline is released.
 
 2021/09/28 The paper of TNT (Transformer in Transformer) is accepted by NeurIPS 2021.
@@ -19,13 +21,7 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawe
 
 2021/08/30 GhostNet paper is selected as the **[Most Influential CVPR 2020 Papers](https://www.paperdigest.org/2021/08/most-influential-cvpr-papers-2021-08/)**.
 
-2021/08/26 The codes of [LegoNet](https://github.com/huawei-noah/LegoNet) and [Versatile Filters](https://github.com/huawei-noah/Versatile-Filters) has been merged into this repo.
-
-2021/06/15 The code of TNT (Transformer in Transformer) has been released in this repo.
-
 2020/10/31 GhostNet+TinyNet achieves better performance. See details in our NeurIPS 2020 paper: [arXiv](https://arxiv.org/abs/2010.14819).
-
-2020/06/10 GhostNet is included in [PyTorch Hub](https://pytorch.org/hub/pytorch_vision_ghostnet/).
 
 ---
 
