@@ -6,6 +6,7 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawe
 - [PyramidTNT Code](#tnt-code)
 - [LegoNet Code](#legonet-code)
 - [Versatile Filters Code](#versatile-filters-code)
+- [AugViT Code](#augvit-code)
 - [Citation](#citation)
 - [Other versions](#other-versions)
 
@@ -57,6 +58,11 @@ This repo provides the implementation of paper [LegoNet: Efficient Convolutional
 This repo provides the implementation of paper [Learning Versatile Filters for Efficient Convolutional Neural Networks (NeurIPS 2018)](https://papers.nips.cc/paper/7433-learning-versatile-filters-for-efficient-convolutional-neural-networks)
 - PyTorch: [./versatile_filters](https://github.com/huawei-noah/CV-backbones/tree/master/versatile_filters).
 
+## AugViT Code
+
+This repo provides the implementation of paper [Augmented Shortcuts for Vision Transformers (NeurIPS 2021)](https://proceedings.neurips.cc/paper/2021/file/818f4654ed39a1c147d1e51a00ffb4cb-Paper.pdf)
+- PyTorch: [./augvit_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/augvit_pytorch).
+- We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/augvit).
 
 ## Citation
 ```
@@ -89,6 +95,13 @@ This repo provides the implementation of paper [Learning Versatile Filters for E
   author={Wang, Yunhe and Xu, Chang and Chunjing, XU and Xu, Chao and Tao, Dacheng},
   booktitle={NeurIPS},
   year={2018}
+}
+@article{tang2021augmented,
+      title={Augmented shortcuts for vision transformers},
+      author={Tang, Yehui and Han, Kai and Xu, Chang and Xiao, An and Deng, Yiping and Xu, Chao and Wang, Yunhe},
+      journal={Advances in Neural Information Processing Systems},
+      volume={34},
+      year={2021}
 }
 ```
 
