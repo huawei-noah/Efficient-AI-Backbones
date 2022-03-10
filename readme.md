@@ -1,5 +1,5 @@
 # CV Backbones 
-including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawei Noah's Ark Lab.
+including GhostNet, TinyNet, TNT (Transformer in Transformer), AugViT, WaveMLP developed by Huawei Noah's Ark Lab.
 - [GhostNet Code](#ghostnet-code)
 - [TinyNet Code](#tinynet-code)
 - [TNT Code](#tnt-code)
@@ -7,6 +7,7 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer) developed by Huawe
 - [LegoNet Code](#legonet-code)
 - [Versatile Filters Code](#versatile-filters-code)
 - [AugViT Code](#augvit-code)
+- [ WaveMLP Code](#wavemlp-code)
 - [Citation](#citation)
 - [Other versions](#other-versions)
 
@@ -64,6 +65,12 @@ This repo provides the implementation of paper [Augmented Shortcuts for Vision T
 - PyTorch: [./augvit_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/augvit_pytorch).
 - We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/augvit).
 
+## WaveMLP Code
+
+This repo provides the implementation of paper [An Image Patch is a Wave: Quantum Inspired Vision MLP (CVPR 2022)](https://arxiv.org/pdf/2111.12294.pdf)
+- PyTorch: [./wavemlp_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/wavemlp_pytorch).
+- We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/wave_mlp).
+
 ## Citation
 ```
 @inproceedings{ghostnet,
@@ -102,6 +109,12 @@ This repo provides the implementation of paper [Augmented Shortcuts for Vision T
       journal={Advances in Neural Information Processing Systems},
       volume={34},
       year={2021}
+}
+@article{tang2021image,
+  title={An Image Patch is a Wave: Phase-Aware Vision MLP},
+  author={Tang, Yehui and Han, Kai and Guo, Jianyuan and Xu, Chang and Li, Yanxi and Xu, Chao and Wang, Yunhe},
+  journal={arXiv preprint arXiv:2111.12294},
+  year={2021}
 }
 ```
 
