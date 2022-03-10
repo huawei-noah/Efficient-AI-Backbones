@@ -5,9 +5,13 @@
 
 In the field of computer vision, recent works show that a pure MLP architecture mainly stacked by fully-connected layers can achieve competing performance with CNN and transformer. An input image of vision MLP is usually split into multiple tokens (patches), while the existing MLP models directly aggregate them with fixed weights, neglecting the varying semantic information of tokens from different images. To dynamically aggregate tokens, we propose to represent each token as a wave function with two parts, amplitude and phase. Amplitude is the original feature and the phase term is a complex value changing according to the semantic contents of input images. Introducing the phase term can dynamically modulate the relationship between tokens and fixed weights in MLP. Based on the wave-like token representation, we establish a novel Wave-MLP architecture for vision tasks. 
 
-<center class="half">
-    <img src="./figures/res.PNG" width="400"/><img src="./figures/patm.PNG" width="400"/>
-</center>
+<p align="center">
+<img src="./figures/res.PNG" width="600">
+</p>
+<p align="center">
+<img src="./figures/patm.PNG" width="600">
+</p>
+
 
 ## Results
 
