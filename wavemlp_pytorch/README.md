@@ -8,6 +8,7 @@ In the field of computer vision, recent works show that a pure MLP architecture 
 <center class="half">
     <img src="./figures/res.PNG" width="500"/><img src="./figures/patm.PNG" width="500"/>
 </center>
+
 ## Results
 
 
