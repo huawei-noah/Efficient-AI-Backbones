@@ -53,27 +53,19 @@ def _cfg(url='', **kwargs):
 
 default_cfgs = {
     # patch models
-    'vit_small_patch16_224': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/vit_small_p16_224-15ec54c9.pth',
-    ),
+    'vit_small_patch16_224': _cfg(),
     'vit_base_patch16_224': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_p16_224-80ecf9dd.pth',
         mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5),
     ),
     'vit_base_patch16_384': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_p16_384-83fb41ba.pth',
         input_size=(3, 384, 384), mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), crop_pct=1.0),
     'vit_base_patch32_384': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_base_p32_384-830016f5.pth',
         input_size=(3, 384, 384), mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), crop_pct=1.0),
     'vit_large_patch16_224': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_large_p16_224-4ee7a4dc.pth',
         mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5)),
     'vit_large_patch16_384': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_large_p16_384-b3be5167.pth',
         input_size=(3, 384, 384), mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), crop_pct=1.0),
     'vit_large_patch32_384': _cfg(
-        url='https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-vitjx/jx_vit_large_p32_384-9b920ba8.pth',
         input_size=(3, 384, 384), mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5), crop_pct=1.0),
     'vit_huge_patch16_224': _cfg(),
     'vit_huge_patch32_384': _cfg(input_size=(3, 384, 384)),
@@ -396,9 +388,6 @@ def augvit_small(pretrained=False, **kwargs):
         patch_size=16, embed_dim=384, depth=12, num_heads=6, mlp_ratio=4, qkv_bias=True,
         norm_layer=partial(nn.LayerNorm, eps=1e-6),mode='base',num_cir=4, **kwargs) #mode,num_cir
     model.default_cfg = default_cfgs['vit_base_patch16_224']
-    if pretrained:
-        load_pretrained(
-            model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3), filter_fn=_conv_filter)
     return model
 
 @register_model 
@@ -408,9 +397,6 @@ def augvit_small_linear(pretrained=False, **kwargs):
         patch_size=16, embed_dim=384, depth=12, num_heads=6, mlp_ratio=4, qkv_bias=True,
         norm_layer=partial(nn.LayerNorm, eps=1e-6),mode='linear',num_cir=4, **kwargs) #mode,num_cir
     model.default_cfg = default_cfgs['vit_base_patch16_224']
-    if pretrained:
-        load_pretrained(
-            model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3), filter_fn=_conv_filter)
     return model
 
 @register_model 
@@ -420,9 +406,6 @@ def augvit_small_circulant2(pretrained=False, **kwargs):
         patch_size=16, embed_dim=384, depth=12, num_heads=6, mlp_ratio=4, qkv_bias=True,
         norm_layer=partial(nn.LayerNorm, eps=1e-6),mode='circulant2',num_cir=4, **kwargs) #mode,num_cir
     model.default_cfg = default_cfgs['vit_base_patch16_224']
-    if pretrained:
-        load_pretrained(
-            model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3), filter_fn=_conv_filter)
     return model
 
 @register_model 
@@ -432,9 +415,6 @@ def augvit_small_linear2(pretrained=False, **kwargs):
         patch_size=16, embed_dim=384, depth=12, num_heads=6, mlp_ratio=4, qkv_bias=True,
         norm_layer=partial(nn.LayerNorm, eps=1e-6),mode='linear2',num_cir=4, **kwargs) #mode,num_cir
     model.default_cfg = default_cfgs['vit_base_patch16_224']
-    if pretrained:
-        load_pretrained(
-            model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3), filter_fn=_conv_filter)
     return model
 
 @register_model 
@@ -444,7 +424,4 @@ def augvit_base_circulant2(pretrained=False, **kwargs):
         patch_size=16, embed_dim=768, depth=12, num_heads=12, mlp_ratio=4, qkv_bias=True,
         norm_layer=partial(nn.LayerNorm, eps=1e-6),mode='circulant2',num_cir=4, **kwargs) #mode,num_cir
     model.default_cfg = default_cfgs['vit_base_patch16_224']
-    if pretrained:
-        load_pretrained(
-            model, num_classes=model.num_classes, in_chans=kwargs.get('in_chans', 3), filter_fn=_conv_filter)
     return model
