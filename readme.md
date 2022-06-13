@@ -9,9 +9,11 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer), AugViT, WaveMLP d
 - [AugViT Code](#augvit-code)
 - [ WaveMLP Code](#wavemlp-code)
 - [Citation](#citation)
-- [Other versions](#other-versions)
+- [Other versions](#other-versions-of-ghostNet)
 
 **News**
+
+2022/06 The code of [Vision GNN (ViG)](https://arxiv.org/abs/2206.00272) will be released as soon. 
 
 2022/02/06 Transformer in Transformer is selected as the **[Most Influential NeurIPS 2021 Papers](https://www.paperdigest.org/2022/02/most-influential-nips-papers-2022-02/)**.
 
@@ -103,18 +105,17 @@ This repo provides the implementation of paper [An Image Patch is a Wave: Quantu
   booktitle={NeurIPS},
   year={2018}
 }
-@article{tang2021augmented,
+@inproceedings{tang2021augmented,
       title={Augmented shortcuts for vision transformers},
       author={Tang, Yehui and Han, Kai and Xu, Chang and Xiao, An and Deng, Yiping and Xu, Chao and Wang, Yunhe},
-      journal={Advances in Neural Information Processing Systems},
-      volume={34},
+      booktitle={NeurIPS},
       year={2021}
 }
-@article{tang2021image,
+@inproceedings{tang2022image,
   title={An Image Patch is a Wave: Phase-Aware Vision MLP},
   author={Tang, Yehui and Han, Kai and Guo, Jianyuan and Xu, Chang and Li, Yanxi and Xu, Chao and Wang, Yunhe},
-  journal={arXiv preprint arXiv:2111.12294},
-  year={2021}
+  booktitle={CVPR},
+  year={2022}
 }
 ```
 
