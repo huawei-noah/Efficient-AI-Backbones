@@ -1,5 +1,5 @@
 # CV Backbones 
-including GhostNet, TinyNet, TNT (Transformer in Transformer), AugViT, WaveMLP developed by Huawei Noah's Ark Lab.
+including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG developed by Huawei Noah's Ark Lab.
 - [GhostNet Code](#ghostnet-code)
 - [TinyNet Code](#tinynet-code)
 - [TNT Code](#tnt-code)
@@ -7,13 +7,14 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer), AugViT, WaveMLP d
 - [LegoNet Code](#legonet-code)
 - [Versatile Filters Code](#versatile-filters-code)
 - [AugViT Code](#augvit-code)
-- [ WaveMLP Code](#wavemlp-code)
+- [WaveMLP Code](#wavemlp-code)
+- [ViG Code](#vig-code)
 - [Citation](#citation)
 - [Other versions](#other-versions-of-ghostNet)
 
 **News**
 
-2022/06 The code of [Vision GNN (ViG)](https://arxiv.org/abs/2206.00272) will be released as soon. 
+2022/06/17 The code of [Vision GNN (ViG)](https://arxiv.org/abs/2206.00272) is released. 
 
 2022/02/06 Transformer in Transformer is selected as the **[Most Influential NeurIPS 2021 Papers](https://www.paperdigest.org/2022/02/most-influential-nips-papers-2022-02/)**.
 
@@ -34,21 +35,21 @@ including GhostNet, TinyNet, TNT (Transformer in Transformer), AugViT, WaveMLP d
 This repo provides GhostNet **pretrained models** and **inference code** for TensorFlow and PyTorch:
 - Tensorflow: [./ghostnet_tensorflow](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_tensorflow) with pretrained model.
 - PyTorch: [./ghostnet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_pytorch) with pretrained model.
-- We also opensource code on [MindSpore Hub](https://www.mindspore.cn/resources/hub) and [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
+- We also opensource code on [MindSpore Hub](https://www.mindspore.cn/resources/hub) and [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv).
 
-For **training**, please refer to [tinynet](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/tinynet) or [timm](https://rwightman.github.io/pytorch-image-models/training_hparam_examples/#mobilenetv3-large-100-75766-top-1-92542-top-5).
+For **training**, please refer to [tinynet](https://gitee.com/mindspore/models/tree/master/research/cv/tinynet) or [timm](https://rwightman.github.io/pytorch-image-models/training_hparam_examples/#mobilenetv3-large-100-75766-top-1-92542-top-5).
 
 ## TinyNet Code
 
 This repo provides TinyNet **pretrained models** and **inference code** for PyTorch:
 - PyTorch: [./tinynet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tinynet_pytorch) with pretrained model.
-- We also opensource training code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv).
+- We also opensource training code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv).
 
 ## TNT Code
 
 This repo provides **training code** and **pretrained models** of TNT (Transformer in Transformer) for PyTorch:
 - PyTorch: [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch).
-- We also opensource code on [MindSpore Model Zoo](https://gitee.com/mindspore/mindspore/tree/master/model_zoo/research/cv/TNT).
+- We also opensource code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/TNT).
 
 The code of PyramidTNT is also released: 
 - PyTorch: [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch).
@@ -73,6 +74,13 @@ This repo provides the implementation of paper [An Image Patch is a Wave: Quantu
 - PyTorch: [./wavemlp_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/wavemlp_pytorch).
 - We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/wave_mlp).
 
+## ViG Code
+
+This repo provides the implementation of paper [Vision GNN: An Image is Worth Graph of Nodes](https://arxiv.org/abs/2206.00272)
+- PyTorch: [./vig_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/vig_pytorch).
+- We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/ViG).
+
+
 ## Citation
 ```
 @inproceedings{ghostnet,
@@ -94,11 +102,11 @@ This repo provides the implementation of paper [An Image Patch is a Wave: Quantu
   year={2021}
 }
 @inproceedings{legonet,
-    title={LegoNet: Efficient Convolutional Neural Networks with Lego Filters},
-    author={Yang, Zhaohui and Wang, Yunhe and Liu, Chuanjian and Chen, Hanting and Xu, Chunjing and Shi, Boxin and Xu, Chao and Xu, Chang},
-    booktitle={ICML},
-    year={2019}
-  }
+  title={LegoNet: Efficient Convolutional Neural Networks with Lego Filters},
+  author={Yang, Zhaohui and Wang, Yunhe and Liu, Chuanjian and Chen, Hanting and Xu, Chunjing and Shi, Boxin and Xu, Chao and Xu, Chang},
+  booktitle={ICML},
+  year={2019}
+}
 @inproceedings{wang2018learning,
   title={Learning versatile filters for efficient convolutional neural networks},
   author={Wang, Yunhe and Xu, Chang and Chunjing, XU and Xu, Chao and Tao, Dacheng},
@@ -106,16 +114,23 @@ This repo provides the implementation of paper [An Image Patch is a Wave: Quantu
   year={2018}
 }
 @inproceedings{tang2021augmented,
-      title={Augmented shortcuts for vision transformers},
-      author={Tang, Yehui and Han, Kai and Xu, Chang and Xiao, An and Deng, Yiping and Xu, Chao and Wang, Yunhe},
-      booktitle={NeurIPS},
-      year={2021}
+  title={Augmented shortcuts for vision transformers},
+  author={Tang, Yehui and Han, Kai and Xu, Chang and Xiao, An and Deng, Yiping and Xu, Chao and Wang, Yunhe},
+  booktitle={NeurIPS},
+  year={2021}
 }
 @inproceedings{tang2022image,
   title={An Image Patch is a Wave: Phase-Aware Vision MLP},
   author={Tang, Yehui and Han, Kai and Guo, Jianyuan and Xu, Chang and Li, Yanxi and Xu, Chao and Wang, Yunhe},
   booktitle={CVPR},
   year={2022}
+}
+@misc{vig,
+  title={Vision GNN: An Image is Worth Graph of Nodes}, 
+  author={Kai Han and Yunhe Wang and Jianyuan Guo and Yehui Tang and Enhua Wu},
+  year={2022},
+  eprint={2206.00272},
+  archivePrefix={arXiv}
 }
 ```
 
