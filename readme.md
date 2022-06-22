@@ -1,4 +1,4 @@
-# CV Backbones 
+# Efficient AI Backbones 
 including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG developed by Huawei Noah's Ark Lab.
 - [GhostNet Code](#ghostnet-code)
 - [TinyNet Code](#tinynet-code)
@@ -14,7 +14,7 @@ including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG de
 
 **News**
 
-2022/06/17 The code of [Vision GNN (ViG)](https://arxiv.org/abs/2206.00272) is released. 
+2022/06/17 The code of [Vision GNN (ViG)](https://arxiv.org/abs/2206.00272) is released at [./vig_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/vig_pytorch). 
 
 2022/02/06 Transformer in Transformer is selected as the **[Most Influential NeurIPS 2021 Papers](https://www.paperdigest.org/2022/02/most-influential-nips-papers-2022-02/)**.
 
