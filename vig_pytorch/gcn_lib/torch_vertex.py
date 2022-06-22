@@ -24,7 +24,7 @@ class MRConv2d(nn.Module):
             x_j = batched_index_select(y, edge_index[0])
         else:
             x_j = batched_index_select(x, edge_index[0])
-        x_j, _ = torch.max(x_j - x_i, -1, keepdim=True)x
+        x_j, _ = torch.max(x_j - x_i, -1, keepdim=True)
         b, c, n, _ = x.shape
         x = torch.cat([x.unsqueeze(2), x_j.unsqueeze(2)], dim=2).reshape(b, 2 * c, n, _)
         return self.nn(x)
