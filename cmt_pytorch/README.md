@@ -79,10 +79,6 @@ If you find this project useful in your research, please consider cite:
 }
 ```
 
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## Acknowledgment
 
 This repo is based on [DeiT](https://github.com/facebookresearch/deit) and [pytorch-image-models](https://github.com/rwightman/pytorch-image-models).
