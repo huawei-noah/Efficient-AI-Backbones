@@ -356,7 +356,9 @@ def main():
     input = torch.randn(input_size)#.cuda()
     
     from torchprofile import profile_macs
+    model.eval()
     macs = profile_macs(model, input)
+    model.train()
     print('model flops:', macs, 'input_size:', input_size)
     ##########################################
     
