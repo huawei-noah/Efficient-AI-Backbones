@@ -6,6 +6,7 @@ By Kai Han, Yunhe Wang, Jianyuan Guo, Yehui Tang and Enhua Wu. [[arXiv link]](ht
 ## Requirements
 Pytorch 1.7.0,
 timm 0.3.2,
+torchprofile 0.0.4
 apex
 
 ## ViG Code
