@@ -1,3 +1,5 @@
+# 2022.06.28-Changed for building CMT
+#            Huawei Technologies Co., Ltd. <foss@huawei.com>
 # Modified from Fackbook, Deit
 # jianyuan.guo@huawei.com
 #
