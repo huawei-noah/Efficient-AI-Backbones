@@ -1,3 +1,5 @@
+# 2022.06.27-Changed for building SNN-MLP
+#            Huawei Technologies Co., Ltd. <foss@huawei.com>
 import os
 import yaml
 from yacs.config import CfgNode as CN
