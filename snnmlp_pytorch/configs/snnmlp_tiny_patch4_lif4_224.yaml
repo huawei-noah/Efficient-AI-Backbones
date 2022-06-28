@@ -1,0 +1,7 @@
+MODEL:
+  TYPE: snnmlp
+  NAME: snnmlp_tiny_patch4_lif4_224
+  DROP_PATH_RATE: 0.2
+  SNNMLP:
+    EMBED_DIM: 96
+    DEPTHS: [ 2, 2, 6, 2 ]
