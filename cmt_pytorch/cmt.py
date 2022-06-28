@@ -1,4 +1,6 @@
-## Author: Jianyuan Guo (jyguo@pku.edu.cn)
+# 2022.06.28-Changed for building CMT
+#            Huawei Technologies Co., Ltd. <foss@huawei.com>
+# Author: Jianyuan Guo (jyguo@pku.edu.cn)
 
 import math
 import logging
