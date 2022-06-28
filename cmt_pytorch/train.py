@@ -29,7 +29,6 @@ from timm.utils import NativeScaler, get_state_dict, ModelEma, ApexScaler
 from datasets import build_dataset
 from engine import train_one_epoch, evaluate
 from samplers import RASampler
-import models
 import utils
 
 try:
