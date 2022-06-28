@@ -14,7 +14,6 @@ from PIL import Image
 import torch
 import numpy as np
 import scipy.io
-import moxing as mox
 
 
 class CarsDataset(torch.utils.data.Dataset):
