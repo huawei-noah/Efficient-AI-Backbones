@@ -1,3 +1,6 @@
+# 2022.06.28-Changed for building CMT
+#            Huawei Technologies Co., Ltd. <foss@huawei.com>
+
 import os
 import json
 
