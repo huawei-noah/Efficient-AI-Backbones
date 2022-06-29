@@ -165,7 +165,7 @@ class Grapher(nn.Module):
             return relative_pos
         else:
             N = H * W
-            N_reduced = N_q // (self.r * self.r)
+            N_reduced = N // (self.r * self.r)
             return F.interpolate(relative_pos.unsqueeze(0), size=(N, N_reduced), mode="bicubic").squeeze(0)
 
     def forward(self, x):
