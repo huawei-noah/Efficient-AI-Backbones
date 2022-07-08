@@ -233,7 +233,7 @@ def pvig_m_224_gelu(pretrained=False, **kwargs):
             self.use_stochastic = False # stochastic for gcn, True or False
             self.drop_path = drop_path_rate
             self.blocks = [2,2,16,2] # number of basic blocks in the backbone
-            self.channels = [96, 182, 384, 768] # number of channels of deep features
+            self.channels = [96, 192, 384, 768] # number of channels of deep features
             self.n_classes = num_classes # Dimension of out_channels
             self.emb_dims = 1024 # Dimension of embeddings
 
