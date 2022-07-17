@@ -18,9 +18,9 @@ including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG de
 
 2022/02/06 Transformer in Transformer is selected as the **[Most Influential NeurIPS 2021 Papers](https://www.paperdigest.org/2022/02/most-influential-nips-papers-2022-02/)**.
 
-2022/01/06 The extended version of [GhostNet](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_pytorch) is accepted by IJCV.
+2022/01/06 The extended version of GhostNet is accepted by [IJCV](https://arxiv.org/abs/2201.03297).
 
-2021/09/28 The paper of TNT (Transformer in Transformer) is accepted by NeurIPS 2021.
+2021/09/28 The paper of TNT (Transformer in Transformer) is accepted by [NeurIPS 2021](https://arxiv.org/abs/2103.00112).
 
 2021/09/18 The extended version of [Versatile Filters](https://github.com/huawei-noah/CV-backbones/tree/master/versatile_filters) is accepted by T-PAMI.
 
