@@ -119,7 +119,7 @@ class DeepGCN(torch.nn.Module):
         channels = opt.channels
         reduce_ratios = [4, 2, 1, 1]
         dpr = [x.item() for x in torch.linspace(0, drop_path, self.n_blocks)]  # stochastic depth decay rule 
-        num_knn = [int(x.item()) for x in torch.linspace(k, k, self.n_blocks)]  # number of knn's k
+        num_knn = [int(x.item()) for x in torch.linspace(k, 2 * k, self.n_blocks)]  # number of knn's k
         max_dilation = 49 // max(num_knn)
         
         self.stem = Stem(out_dim=channels[0], act=act)
