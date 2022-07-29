@@ -66,6 +66,15 @@ To train CMT-Base on ImageNet-1K on a single node with 8 gpus:
 python -m torch.distributed.launch --nproc_per_node=8 train.py --data-path /your_path_to/imagenet/ --output_dir /your_path_to/output/ --model cmt_b --batch-size 64 --apex-amp --input-size 256 --weight-decay 0.05 --drop-path 0.25 --epochs 300 --test_freq 100 --test_epoch 260 --warmup-lr 1e-6 --min-lr 2e-5 --warmup-epochs 20
 ```
 
+### CMT on ImageNet-1K Classification
+
+| Model                | Top 1 Acc. | Log | Ckpt |
+| :------------------- | :--------: | :------: | :------: |
+| CMT-Ti        | 79.0%     | [github](https://github.com/ggjy/CMT.pytorch/releases/download/release-v1/log_cmt_tiny.txt) | [github](https://github.com/ggjy/CMT.pytorch/releases/download/release-v1/cmt_tiny.pth) |
+| CMT-XS        | 81.8%     | [github](https://github.com/ggjy/CMT.pytorch/releases/download/release-v1/log_cmt_xs.txt) | [github](https://github.com/ggjy/CMT.pytorch/releases/download/release-v1/cmt_xs.pth) |
+| CMT-Small       | 83.5%     | [github](https://github.com/ggjy/CMT.pytorch/releases/download/release-v1/log_cmt_small.txt) | [github](https://github.com/ggjy/CMT.pytorch/releases/download/release-v1/cmt_small.pth) |
+| CMT-Base        | 84.5%     | [github](https://github.com/ggjy/CMT.pytorch/releases/download/release-v1/log_cmt_base.txt) | [github](https://github.com/ggjy/CMT.pytorch/releases/download/release-v1/cmt_base.pth) |
+
 ## Citation
 
 If you find this project useful in your research, please consider cite:
