@@ -19,16 +19,16 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py /path/to/imagenet
 
 - Pretrained models
 
-|Model|Params (M)|FLOPs (B)|Top-1|URL|
-|-|-|-|-|-|
-|Pyramid ViG-Ti|10.7|1.7|78.5|[[BaiduDisk]](https://pan.baidu.com/s/1Vrr-oXQeUFujaHKMC5sXIQ), Password: chae|
-|Pyramid ViG-S|27.3|4.6|82.1|[[BaiduDisk]](https://pan.baidu.com/s/10MWZznvPIvGAiBtnwj7TRg), Password: 81mg|
-|Pyramid ViG-M|51.7|8.9|83.1|[[BaiduDisk]](https://pan.baidu.com/s/1N3nviACOrY0XBC0FKoDL6g), Password: prd3|
-|Pyramid ViG-B|82.6|16.8|83.7|[[BaiduDisk]](https://pan.baidu.com/s/1b5OvPZXwcSwur2nuDAzf5Q), Password: rgm4|
+|Model|Params (M)|FLOPs (B)|Top-1|BaiduDisk URL|Github Release|
+|-|-|-|-|-|-|
+|Pyramid ViG-Ti|10.7|1.7|78.5|[[BaiduDisk]](https://pan.baidu.com/s/1Vrr-oXQeUFujaHKMC5sXIQ), Password: chae|[Github Release](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/tag/pyramid-vig)|
+|Pyramid ViG-S|27.3|4.6|82.1|[[BaiduDisk]](https://pan.baidu.com/s/10MWZznvPIvGAiBtnwj7TRg), Password: 81mg|[Github Release](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/tag/pyramid-vig)|
+|Pyramid ViG-M|51.7|8.9|83.1|[[BaiduDisk]](https://pan.baidu.com/s/1N3nviACOrY0XBC0FKoDL6g), Password: prd3|[Github Release](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/tag/pyramid-vig)|
+|Pyramid ViG-B|82.6|16.8|83.7|[[BaiduDisk]](https://pan.baidu.com/s/1b5OvPZXwcSwur2nuDAzf5Q), Password: rgm4|[Github Release](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/tag/pyramid-vig)|
 
 - Evaluate example:
 ```
-python train.py /path/to/imagenet/ --model pvig_s_224_gelu -b 256 --pretrain_path /path/to/pretrained/model/ --evaluate
+python train.py /path/to/imagenet/ --model pvig_s_224_gelu -b 128 --pretrain_path /path/to/pretrained/model/ --evaluate
 ```
 
 ## Citation
