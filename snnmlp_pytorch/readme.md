@@ -45,13 +45,11 @@ Dataset used: [ImageNet2012](http://www.image-net.org/)
 
 ```
 
-Download checkpoints: [[BaiduDisk]](https://pan.baidu.com/s/1YuxSJNOUyPZUKUPy419HPg), password: 02tb.
-
 ## Result
 
-|Model|Params (M)|FLOPs (B)|Top-1|
-|-|-|-|-|
-|SNN-MLP-T|28.3|4.4|81.9|
-|SNN-MLP-S|49.7|8.5|83.3|
-|SNN-MLP-B|87.9|15.2|83.6|
+|Model|Params (M)|FLOPs (B)|Top-1|Download URL|
+|-|-|-|-|-|
+|SNN-MLP-T|28.3|4.4|81.9|[[ckpt]](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/snnmlp/snnmlp_tiny_81.88.pt) & [[log]]( https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/snnmlp/snnmlp_tiny_81.88.log)|
+|SNN-MLP-S|49.7|8.5|83.3|[[ckpt]](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/snnmlp/snnmlp_small_83.30.pt) & [[log]]( https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/snnmlp/snnmlp_small_83.30.log)|
+|SNN-MLP-B|87.9|15.2|83.6|[[ckpt]](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/snnmlp/snnmlp_base_83.59.pt) & [[log]]( https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/snnmlp/snnmlp_base_83.59.log)|
 
