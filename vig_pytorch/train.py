@@ -42,6 +42,7 @@ from timm.utils import ApexScaler, NativeScaler
 
 from data.myloader import create_loader
 import pyramid_vig
+import vig
 
 try:
     from apex import amp

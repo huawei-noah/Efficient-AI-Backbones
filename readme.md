@@ -14,15 +14,15 @@ including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG de
 
 **News**
 
-2022/06/17 The code of [Vision GNN (ViG)](https://arxiv.org/abs/2206.00272) is released at [./vig_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/vig_pytorch). 
+2022/06/17 The code of NeurIPS 2022 [Vision GNN (ViG)](https://arxiv.org/abs/2206.00272) is released at [./vig_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/vig_pytorch). 
 
-2022/02/06 Transformer in Transformer is selected as the **[Most Influential NeurIPS 2021 Papers](https://www.paperdigest.org/2022/02/most-influential-nips-papers-2022-02/)**.
+2022/02/06 Transformer in Transformer (TNT) is selected as the **[Most Influential NeurIPS 2021 Papers](https://www.paperdigest.org/2022/02/most-influential-nips-papers-2022-02/)**.
 
 2022/01/06 The extended version of GhostNet is accepted by [IJCV](https://arxiv.org/abs/2201.03297).
 
 2021/09/28 The paper of TNT (Transformer in Transformer) is accepted by [NeurIPS 2021](https://arxiv.org/abs/2103.00112).
 
-2021/09/18 The extended version of [Versatile Filters](https://github.com/huawei-noah/CV-backbones/tree/master/versatile_filters) is accepted by T-PAMI.
+2021/09/18 The extended version of [Versatile Filters](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/versatile_filters) is accepted by T-PAMI.
 
 2021/08/30 GhostNet paper is selected as the **[Most Influential CVPR 2020 Papers](https://www.paperdigest.org/2021/08/most-influential-cvpr-papers-2021-08/)**.
 
@@ -125,12 +125,11 @@ This repo provides the implementation of paper [Vision GNN: An Image is Worth Gr
   booktitle={CVPR},
   year={2022}
 }
-@misc{vig,
+@inproceedings{han2022vig,
   title={Vision GNN: An Image is Worth Graph of Nodes}, 
   author={Kai Han and Yunhe Wang and Jianyuan Guo and Yehui Tang and Enhua Wu},
-  year={2022},
-  eprint={2206.00272},
-  archivePrefix={arXiv}
+  booktitle={NeurIPS},
+  year={2022}
 }
 ```
 
