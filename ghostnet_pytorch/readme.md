@@ -45,12 +45,6 @@ dir/
     ...
 ```
 
-# G-GhostNet
-
-`g_ghost_regnet.py` implemented `G-Ghost RegNet` in the extended [IJCV paper](https://arxiv.org/abs/2201.03297).
-
-The checkpoint is available at [BaiduDisk](https://pan.baidu.com/s/1bgdM9xWVCFGMyYMKPUn4Zg) and Password: `on8i`.
-
 ## Citation
 ```
 @inproceedings{ghostnet2020,

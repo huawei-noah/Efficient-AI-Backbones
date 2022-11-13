@@ -14,7 +14,7 @@ apex
 - ViG
 
 |Model|Params (M)|FLOPs (B)|Top-1|Github Release|
-|-|-|-|-|-|-|
+|-|-|-|-|-|
 |ViG-Ti|7.1|1.3|73.9|[Github Release](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/tag/vig)|
 |ViG-S|22.7|4.5|80.4|[Github Release](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/tag/vig)|
 |ViG-B|86.8|17.7|82.3|[Github Release](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/tag/vig)|
