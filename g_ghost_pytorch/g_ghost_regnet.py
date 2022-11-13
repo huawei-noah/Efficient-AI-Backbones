@@ -1,16 +1,18 @@
-# 2022.07.17-Changed for building GhostNet
+# 2022.11.13-Changed for building G-Ghost RegNet
 #            Huawei Technologies Co., Ltd. <foss@huawei.com>
 """
-Creates a G-Ghost RegNet Model as defined in paper:
-GhostNets on Heterogeneous Devices via Cheap Operations.
-https://arxiv.org/abs/2201.03297
+Creates a G-Ghost-RegNet Model as defined in:
+GhostNets on Heterogeneous Devices via Cheap Operations
+By Kai Han, Yunhe Wang, Chang Xu, Jianyuan Guo, Chunjing Xu, Enhua Wu, Qi Tian.
+arXiv link: https://arxiv.org/abs/2201.03297
 Modified from https://github.com/d-li14/regnet.pytorch
 """
 import numpy as np
 import torch
 import torch.nn as nn
 
-__all__ = ['regnetx_032']
+__all__ = ['g_ghost_regnetx_002', 'g_ghost_regnetx_004', 'g_ghost_regnetx_006', 'g_ghost_regnetx_008', 'g_ghost_regnetx_016', 'g_ghost_regnetx_032',
+           'g_ghost_regnetx_040', 'g_ghost_regnetx_064', 'g_ghost_regnetx_080', 'g_ghost_regnetx_120', 'g_ghost_regnetx_160', 'g_ghost_regnetx_320']
 
 
 def conv3x3(in_planes, out_planes, stride=1, groups=1, dilation=1):
@@ -114,13 +116,11 @@ class Stage(nn.Module):
             nn.ReLU(inplace=True),
             nn.Conv2d(cheap_planes, cheap_planes, kernel_size=1, bias=False),
             nn.BatchNorm2d(cheap_planes),
-#             nn.ReLU(inplace=True),
         )
         self.cheap = nn.Sequential(
             nn.Conv2d(cheap_planes, cheap_planes,
                       kernel_size=1, stride=1, bias=False),
             nn.BatchNorm2d(cheap_planes),
-#             nn.ReLU(inplace=True),
         )
         self.cheap_relu = nn.ReLU(inplace=True)
         
@@ -145,14 +145,14 @@ class Stage(nn.Module):
         x0 = self.base(input)
         
         m_list = [x0]
-        e = x0[:,:self.raw_planes]        
+        e = x0[:, :self.raw_planes]        
         for l in self.layers:
             e = l(e)
             m_list.append(e)
         m = torch.cat(m_list,1)
         m = self.merge(m)
         
-        c = x0[:,self.raw_planes:]
+        c = x0[:, self.raw_planes:]
         c = self.cheap_relu(self.cheap(c)+m)
         
         x = torch.cat((e,c),1)
@@ -160,12 +160,12 @@ class Stage(nn.Module):
         return x
 
 
-class RegNet(nn.Module):
+class GGhostRegNet(nn.Module):
 
     def __init__(self, block, layers, widths, num_classes=1000, zero_init_residual=True,
                  group_width=1, replace_stride_with_dilation=None,
                  norm_layer=None):
-        super(RegNet, self).__init__()
+        super(GGhostRegNet, self).__init__()
         if norm_layer is None:
             norm_layer = nn.BatchNorm2d
         self._norm_layer = norm_layer
@@ -218,14 +218,6 @@ class RegNet(nn.Module):
                 nn.init.constant_(m.weight, 1)
                 nn.init.constant_(m.bias, 0)
 
-        # Zero-initialize the last BN in each residual branch,
-        # so that the residual branch starts with zeros, and each residual block behaves like an identity.
-        # This improves the model by 0.2~0.3% according to https://arxiv.org/abs/1706.02677
-#         if zero_init_residual:
-#             for m in self.modules():
-#                 if isinstance(m, Bottleneck):
-#                     nn.init.constant_(m.bn3.weight, 0)
-
     def _make_layer(self, block, planes, blocks, stride=1, dilate=False):
         norm_layer = self._norm_layer
         downsample = None
@@ -272,6 +264,50 @@ class RegNet(nn.Module):
         return self._forward_impl(x)
 
 
-def regnetx_032(**kwargs):
-    return RegNet(Bottleneck, [2, 6, 15, 2], [96, 192, 432, 1008], group_width=48, **kwargs)
+def g_ghost_regnetx_002(**kwargs):
+    return GGhostRegNet(Bottleneck, [1, 1, 4, 7], [24, 56, 152, 368], group_width=8, **kwargs)
+
+
+def g_ghost_regnetx_004(**kwargs):
+    return GGhostRegNet(Bottleneck, [1, 2, 7, 12], [32, 64, 160, 384], group_width=16, **kwargs)
+
+
+def g_ghost_regnetx_006(**kwargs):
+    return GGhostRegNet(Bottleneck, [1, 3, 5, 7], [48, 96, 240, 528], group_width=24, **kwargs)
+
+
+def g_ghost_regnetx_008(**kwargs):
+    return GGhostRegNet(Bottleneck, [1, 3, 7, 5], [64, 128, 288, 672], group_width=16, **kwargs)
+
+
+def g_ghost_regnetx_016(**kwargs):
+    return GGhostRegNet(Bottleneck, [2, 4, 10, 2], [72, 168, 408, 912], group_width=24, **kwargs)
+
+
+def g_ghost_regnetx_032(**kwargs):
+    return GGhostRegNet(Bottleneck, [2, 6, 15, 2], [96, 192, 432, 1008], group_width=48, **kwargs)
+
+
+def g_ghost_regnetx_040(**kwargs):
+    return GGhostRegNet(Bottleneck, [2, 5, 14, 2], [80, 240, 560, 1360], group_width=40, **kwargs)
+
+
+def g_ghost_regnetx_064(**kwargs):
+    return GGhostRegNet(Bottleneck, [2, 4, 10, 1], [168, 392, 784, 1624], group_width=56, **kwargs)
+
+
+def g_ghost_regnetx_080(**kwargs):
+    return GGhostRegNet(Bottleneck, [2, 5, 15, 1], [80, 240, 720, 1920], group_width=120, **kwargs)
+
+
+def g_ghost_regnetx_120(**kwargs):
+    return GGhostRegNet(Bottleneck, [2, 5, 11, 1], [224, 448, 896, 2240], group_width=112, **kwargs)
+
+
+def g_ghost_regnetx_160(**kwargs):
+    return GGhostRegNet(Bottleneck, [2, 6, 13, 1], [256, 512, 896, 2048], group_width=128, **kwargs)
+
+
+def g_ghost_regnetx_320(**kwargs):
+    return GGhostRegNet(Bottleneck, [2, 7, 13, 1], [336, 672, 1344, 2520], group_width=168, **kwargs)
 
