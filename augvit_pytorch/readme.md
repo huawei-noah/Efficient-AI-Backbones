@@ -30,7 +30,6 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py path_to_imagenet 
 ```
 ## Results
 
-Comparison of the pruned networks with different methods on ImageNet.
 <p align="center">
 <img src="fig/imagenet.PNG" width="600">
 </p>
