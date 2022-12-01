@@ -49,3 +49,16 @@ The checkpoint of trained models with different widths can be found as below:
 <p align="center">
 <img src="fig/imagenet.PNG" width="900">
 </p>
+
+
+
+
+## Citation
+```
+@article{tang2022ghostnetv2,
+  title={GhostNetV2: Enhance Cheap Operation with Long-Range Attention},
+  author={Tang, Yehui and Han, Kai and Guo, Jianyuan and Xu, Chang and Xu, Chao and Wang, Yunhe},
+  journal={arXiv preprint arXiv:2211.12905},
+  year={2022}
+}
+ ```
