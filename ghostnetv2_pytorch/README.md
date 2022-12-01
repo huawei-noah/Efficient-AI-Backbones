@@ -27,11 +27,23 @@ The diagrams of blocks in GhostNetV1 and GhostNetV2:
 ## Usage
 
 
-Run  ghostnetv2/train.py` to train models. For example,  you can run the following code to train GhostNetV2 on ImageNet dataset. 
+Install APEX for mixed precision training.
 
 ```shell
-python -m torch.distributed.launch --nproc_per_node=8 train.py path_to_imagenet/ --output /cache/models/ --model ghostnetv2 -b 128 --sched step --epochs 450 --decay-epochs 2.4 --decay-rate .973 --opt rmsproptf --opt-eps .001 -j 7 --warmup-lr 1e-6 --weight-decay 1e-5 --drop 0.2 --model-ema --model-ema-decay 0.9999 --aa rand-m9-mstd0.5 --remode pixel --reprob 0.2 --lr .064 --lr-noise 0.42 0.9 --width 1.0
+pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./apex-master/
 ```
+
+Run ghostnetv2/train.py to train models. For example, you can run the following code to train GhostNetV2-1.0 on ImageNet dataset. '--width' is used to adjust model's width. 
+
+```shell
+python -m torch.distributed.launch --nproc_per_node=8 train.py path_to_imagenet/ --output /cache/models/ --model ghostnetv2 -b 128 --sched step --epochs 450 --decay-epochs 2.4 --decay-rate .973 --opt rmsproptf --opt-eps .001 -j 7 --warmup-lr 1e-6 --weight-decay 1e-5 --drop 0.2 --model-ema --model-ema-decay 0.9999 --aa rand-m9-mstd0.5 --remode pixel --reprob 0.2 --lr .064 --lr-noise 0.42 0.9 --amp --width 1.0
+```
+## Trained Models
+
+The checkpoint of trained models with different widths can be found as below:
+
+[GhostNetV2-1.0](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/GhostNetV2/ck_ghostnetv2_10.pth.tar) | [GhostNetV2-1.3](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/GhostNetV2/ck_ghostnetv2_13.pth.tar) |[GhostNetV2-1.6](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/GhostNetV2/ck_ghostnetv2_16.pth.tar) 
+
 ## Results
 
 <p align="center">
