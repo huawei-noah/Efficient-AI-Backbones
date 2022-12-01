@@ -9,10 +9,13 @@ including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG de
 - [AugViT Code](#augvit-code)
 - [WaveMLP Code](#wavemlp-code)
 - [ViG Code](#vig-code)
+- [GhostNetV2 Code](#ghostnetv2-code)
 - [Citation](#citation)
 - [Other versions](#other-versions-of-ghostNet)
 
 **News**
+
+2022/12/01 The code of NeurIPS 2022 (Spotlight) [GhostNetV2](https://arxiv.org/abs/2211.12905) is released at [./ghostnetv2_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/ghostnetv2_pytorch).
 
 2022/11/13 The code of IJCV 2022 [G-Ghost RegNet](https://arxiv.org/abs/2201.03297) is released at [./vig_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/g_ghost_pytorch). 
 
@@ -80,6 +83,11 @@ This repo provides the implementation of paper [Vision GNN: An Image is Worth Gr
 - PyTorch: [./vig_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/vig_pytorch).
 - We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/ViG).
 
+## GhostNetV2 Code
+
+This repo provides the implementation of paper [GhostNetV2: Enhance Cheap Operation with Long-Range Attention (NeurIPS 2022 Spotlight)](https://arxiv.org/abs/2211.12905)
+- PyTorch: [./ghostnetv2_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/ghostnetv2_pytorch).
+- We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/ghostnetv2).
 
 ## Citation
 ```
@@ -129,6 +137,12 @@ This repo provides the implementation of paper [Vision GNN: An Image is Worth Gr
   title={Vision GNN: An Image is Worth Graph of Nodes}, 
   author={Kai Han and Yunhe Wang and Jianyuan Guo and Yehui Tang and Enhua Wu},
   booktitle={NeurIPS},
+  year={2022}
+}
+@article{tang2022ghostnetv2,
+  title={GhostNetV2: Enhance Cheap Operation with Long-Range Attention},
+  author={Tang, Yehui and Han, Kai and Guo, Jianyuan and Xu, Chang and Xu, Chao and Wang, Yunhe},
+  journal={arXiv preprint arXiv:2211.12905},
   year={2022}
 }
 ```
