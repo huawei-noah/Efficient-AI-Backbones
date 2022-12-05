@@ -4,6 +4,7 @@
     - [SNN-MLP Description](#snn-mlp-description)
     - [Model architecture](#model-architecture)
     - [Dataset](#dataset)
+    - [Requirements](#requirements)
     - [Usage](#usage)
     - [Result](#result)
 
@@ -29,6 +30,17 @@ Dataset used: [ImageNet2012](http://www.image-net.org/)
 - Data format: jpeg
     - Note: Data will be processed in dataset.py
 
+## [Requirements](#contents)
+
+```bash
+torch==1.7.1
+torchvision==0.8.2
+timm==0.3.2
+cupy-cuda101
+PyYAML
+termcolor==1.1.0
+yacs==0.1.8
+```
 
 ## [Usage](#contents)
 
