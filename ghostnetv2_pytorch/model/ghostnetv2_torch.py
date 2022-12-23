@@ -121,7 +121,7 @@ class GhostModuleV2(nn.Module):
             x1 = self.primary_conv(x)
             x2 = self.cheap_operation(x1)
             out = torch.cat([x1,x2], dim=1)
-            return out[:,:self.oup,:,:]*F.interpolate(self.gate_fn(res),size=out.shape[-1],mode='nearest') 
+            return out[:,:self.oup,:,:]*F.interpolate(self.gate_fn(res),size=(out.shape[-2],out.shape[-1]),mode='nearest') 
 
 
 class GhostBottleneckV2(nn.Module): 
