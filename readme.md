@@ -1,23 +1,14 @@
 # Efficient AI Backbones 
 including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG developed by Huawei Noah's Ark Lab.
-- [GhostNet Code](#ghostnet-code)
-- [TinyNet Code](#tinynet-code)
-- [TNT Code](#tnt-code)
-- [PyramidTNT Code](#tnt-code)
-- [LegoNet Code](#legonet-code)
-- [Versatile Filters Code](#versatile-filters-code)
-- [AugViT Code](#augvit-code)
-- [WaveMLP Code](#wavemlp-code)
-- [ViG Code](#vig-code)
-- [GhostNetV2 Code](#ghostnetv2-code)
+- [Model zoo](#model-zoo)
 - [Citation](#citation)
-- [Other versions](#other-versions-of-ghostNet)
+- [Other versions](#other-versions-of-ghostnet)
 
 **News**
 
 2022/12/01 The code of NeurIPS 2022 (Spotlight) [GhostNetV2](https://arxiv.org/abs/2211.12905) is released at [./ghostnetv2_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/ghostnetv2_pytorch).
 
-2022/11/13 The code of IJCV 2022 [G-Ghost RegNet](https://arxiv.org/abs/2201.03297) is released at [./vig_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/g_ghost_pytorch). 
+2022/11/13 The code of IJCV 2022 [G-Ghost RegNet](https://arxiv.org/abs/2201.03297) is released at [./g_ghost_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/g_ghost_pytorch). 
 
 2022/06/17 The code of NeurIPS 2022 [Vision GNN (ViG)](https://arxiv.org/abs/2206.00272) is released at [./vig_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/vig_pytorch). 
 
@@ -33,61 +24,21 @@ including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG de
 
 ---
 
-## GhostNet Code
+## Model zoo
 
-This repo provides GhostNet **pretrained models** and **inference code** for TensorFlow and PyTorch:
-- Tensorflow: [./ghostnet_tensorflow](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_tensorflow) with pretrained model.
-- PyTorch: [./ghostnet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_pytorch) with pretrained model.
-- We also opensource code on [MindSpore Hub](https://www.mindspore.cn/resources/hub) and [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv).
+| Model | Paper | Pytorch code | Tensorflow code | MindSpore code |
+| - | - | - | - | - |
+| GhostNet | GhostNet: More Features from Cheap Operations. [[CVPR 2020]](https://arxiv.org/abs/1911.11907) | [./ghostnet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_pytorch) | [./ghostnet_tensorflow](https://github.com/huawei-noah/CV-backbones/tree/master/ghostnet_tensorflow) | [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/ghostnet) |
+| GhostNetV2 | GhostNetV2: Enhance Cheap Operation with Long-Range Attention. [[NeurIPS 2022 Spotlight]](https://arxiv.org/abs/2211.12905) | [./ghostnetv2_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/ghostnetv2_pytorch) | - | [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/ghostnetv2) |
+| TinyNet | Model Rubik’s Cube: Twisting Resolution, Depth and Width for TinyNets. [[NeurIPS 2020]](https://arxiv.org/abs/2010.14819) | [./tinynet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tinynet_pytorch) | - | [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/tinynet) |
+| TNT | Transformer in Transformer. [[NeurIPS 2021]](https://arxiv.org/abs/2103.00112) | [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch) | - | [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/TNT) |
+| PyramidTNT | PyramidTNT: Improved Transformer-in-Transformer Baselines with Pyramid Architecture. [[CVPR 2022 Workshop]](https://arxiv.org/abs/2201.00978)| [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch) | - | [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/TNT) |
+| LegoNet | LegoNet: Efficient Convolutional Neural Networks with Lego Filters. [[ICML 2019]](http://proceedings.mlr.press/v97/yang19c/yang19c.pdf) | [./legonet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/legonet_pytorch) | - | - |
+| Versatile Filters | Learning Versatile Filters for Efficient Convolutional Neural Networks. [[NeurIPS 2018]](https://papers.nips.cc/paper/7433-learning-versatile-filters-for-efficient-convolutional-neural-networks) | [./versatile_filters](https://github.com/huawei-noah/CV-backbones/tree/master/versatile_filters) | - | - |
+| AugViT | Augmented Shortcuts for Vision Transformers. [[NeurIPS 2021]](https://proceedings.neurips.cc/paper/2021/file/818f4654ed39a1c147d1e51a00ffb4cb-Paper.pdf) | [./augvit_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/augvit_pytorch) | - | [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/augvit) |
+| WaveMLP | An Image Patch is a Wave: Quantum Inspired Vision MLP. [[CVPR 2022]](https://arxiv.org/pdf/2111.12294.pdf) | [./wavemlp_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/wavemlp_pytorch) | - | [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/wave_mlp) |
+| ViG | Vision GNN: An Image is Worth Graph of Nodes. [[NeurIPS 2022]](https://arxiv.org/abs/2206.00272) | [./vig_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/vig_pytorch) | - | [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/ViG) |
 
-For **training**, please refer to [tinynet](https://gitee.com/mindspore/models/tree/master/research/cv/tinynet) or [timm](https://rwightman.github.io/pytorch-image-models/training_hparam_examples/#mobilenetv3-large-100-75766-top-1-92542-top-5).
-
-## TinyNet Code
-
-This repo provides TinyNet **pretrained models** and **inference code** for PyTorch:
-- PyTorch: [./tinynet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tinynet_pytorch) with pretrained model.
-- We also opensource training code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv).
-
-## TNT Code
-
-This repo provides **training code** and **pretrained models** of TNT (Transformer in Transformer) for PyTorch:
-- PyTorch: [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch).
-- We also opensource code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/TNT).
-
-The code of PyramidTNT is also released: 
-- PyTorch: [./tnt_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/tnt_pytorch).
-
-## LegoNet Code
-This repo provides the implementation of paper [LegoNet: Efficient Convolutional Neural Networks with Lego Filters (ICML 2019)](http://proceedings.mlr.press/v97/yang19c/yang19c.pdf)
-- PyTorch: [./legonet_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/legonet_pytorch).
-
-## Versatile Filters Code
-This repo provides the implementation of paper [Learning Versatile Filters for Efficient Convolutional Neural Networks (NeurIPS 2018)](https://papers.nips.cc/paper/7433-learning-versatile-filters-for-efficient-convolutional-neural-networks)
-- PyTorch: [./versatile_filters](https://github.com/huawei-noah/CV-backbones/tree/master/versatile_filters).
-
-## AugViT Code
-
-This repo provides the implementation of paper [Augmented Shortcuts for Vision Transformers (NeurIPS 2021)](https://proceedings.neurips.cc/paper/2021/file/818f4654ed39a1c147d1e51a00ffb4cb-Paper.pdf)
-- PyTorch: [./augvit_pytorch](https://github.com/huawei-noah/CV-backbones/tree/master/augvit_pytorch).
-- We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/augvit).
-
-## WaveMLP Code
-
-This repo provides the implementation of paper [An Image Patch is a Wave: Quantum Inspired Vision MLP (CVPR 2022)](https://arxiv.org/pdf/2111.12294.pdf)
-- PyTorch: [./wavemlp_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/wavemlp_pytorch).
-- We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/wave_mlp).
-
-## ViG Code
-
-This repo provides the implementation of paper [Vision GNN: An Image is Worth Graph of Nodes](https://arxiv.org/abs/2206.00272)
-- PyTorch: [./vig_pytorch](https://github.com/huawei-noah/CV-Backbones/tree/master/vig_pytorch).
-- We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/ViG).
-
-## GhostNetV2 Code
-
-This repo provides the implementation of paper [GhostNetV2: Enhance Cheap Operation with Long-Range Attention (NeurIPS 2022 Spotlight)](https://arxiv.org/abs/2211.12905)
-- PyTorch: [./ghostnetv2_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/ghostnetv2_pytorch).
-- We also release the code on [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/ghostnetv2).
 
 ## Citation
 ```
