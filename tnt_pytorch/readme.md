@@ -18,10 +18,10 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py /path/to/imagenet
 
 - Pretrained models
 
-|Model|Params (M)|FLOPs (B)|Top-1|Top-5|URL|
-|-|-|-|-|-|-|
-|TNT-S|23.8|5.2|81.5|95.7|[[BaiduDisk]](https://pan.baidu.com/s/1AwJDWEPl-hqLHfUvqmlqxQ), Password: 7ndi|
-|TNT-B|65.6|14.1|82.9|96.3|[[BaiduDisk]](https://pan.baidu.com/s/1_TemN7kvWuYeZohisObQ1w), Password: 2gb7|
+|Model|Params (M)|FLOPs (B)|Top-1|Top-5|BaiduDisk| Github Release |
+|-|-|-|-|-|-|-|
+|TNT-S|23.8|5.2|81.5|95.7|[[BaiduDisk]](https://pan.baidu.com/s/1AwJDWEPl-hqLHfUvqmlqxQ), Password: 7ndi|[Github Release](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/tnt/tnt_s_81.5.pth.tar)|
+|TNT-B|65.6|14.1|82.9|96.3|[[BaiduDisk]](https://pan.baidu.com/s/1_TemN7kvWuYeZohisObQ1w), Password: 2gb7|[Github Release](https://github.com/huawei-noah/Efficient-AI-Backbones/releases/download/tnt/tnt_b_82.9.pth.tar)|
 
 - Evaluate example:
 ```
