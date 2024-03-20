@@ -7,6 +7,8 @@ including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG de
 
 ## News
 
+2023/02/27 The paper of ParameterNet is accepted by [CVPR 2024](https://arxiv.org/abs/2306.14525).
+
 2022/12/01 The code of NeurIPS 2022 (Spotlight) [GhostNetV2](https://arxiv.org/abs/2211.12905) is released at [./ghostnetv2_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/ghostnetv2_pytorch).
 
 2022/11/13 The code of IJCV 2022 [G-Ghost RegNet](https://arxiv.org/abs/2201.03297) is released at [./g_ghost_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/g_ghost_pytorch). 
@@ -15,13 +17,9 @@ including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG de
 
 2022/02/06 Transformer in Transformer (TNT) is selected as the **[Most Influential NeurIPS 2021 Papers](https://www.paperdigest.org/2022/02/most-influential-nips-papers-2022-02/)**.
 
-2021/09/28 The paper of TNT (Transformer in Transformer) is accepted by [NeurIPS 2021](https://arxiv.org/abs/2103.00112).
-
 2021/09/18 The extended version of [Versatile Filters](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/versatile_filters) is accepted by T-PAMI.
 
 2021/08/30 GhostNet paper is selected as the **[Most Influential CVPR 2020 Papers](https://www.paperdigest.org/2021/08/most-influential-cvpr-papers-2021-08/)**.
-
-2020/10/31 GhostNet+TinyNet achieves better performance. See details in our NeurIPS 2020 paper: [arXiv](https://arxiv.org/abs/2010.14819).
 
 
 ## Model zoo
@@ -41,6 +39,7 @@ including GhostNet, TNT (Transformer in Transformer), AugViT, WaveMLP and ViG de
 | ViG | Vision GNN: An Image is Worth Graph of Nodes. [[NeurIPS 2022]](https://arxiv.org/abs/2206.00272) | [./vig_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/vig_pytorch) | - | [MindSpore Model Zoo](https://gitee.com/mindspore/models/tree/master/research/cv/ViG) |
 | LegoNet | LegoNet: Efficient Convolutional Neural Networks with Lego Filters. [[ICML 2019]](http://proceedings.mlr.press/v97/yang19c/yang19c.pdf) | [./legonet_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/legonet_pytorch) | - |
 | Versatile Filters | Learning Versatile Filters for Efficient Convolutional Neural Networks. [[NeurIPS 2018]](https://papers.nips.cc/paper/7433-learning-versatile-filters-for-efficient-convolutional-neural-networks) | [./versatile_filters](https://github.com/huawei-noah/CV-backbones/tree/master/versatile_filters) | - |
+| ParameterNet | ParameterNet: Parameters Are All You Need. [[CVPR 2024]](https://arxiv.org/abs/2306.14525). | [./parameternet_pytorch](https://github.com/huawei-noah/Efficient-AI-Backbones/tree/master/parameternet_pytorch) | - |
 
 ## Citation
 ```
