@@ -90,7 +90,7 @@ class Stage(nn.Module):
         if dilate:
             self.dilation *= stride
             stride = 1
-        if stride != 1 or self.inplanes != planes:
+        if stride != 1 or inplanes != planes:
             downsample = nn.Sequential(
                 conv1x1(inplanes, planes, stride),
                 norm_layer(planes),
